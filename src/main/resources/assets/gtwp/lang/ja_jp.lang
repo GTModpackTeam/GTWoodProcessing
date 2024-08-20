@@ -1,0 +1,13 @@
+
+
+# multiblock
+gtwp.machine.sawmill.name=製材機
+gtwp.machine.sawmill.tooltip=うるさいからって電話を伐らないで..
+gtwp.machine.sawmill.tooltip.1=§d作者:§f @Quarri6343, @tier940
+
+# block
+tile.gte_metal_casing.sawmill_casing.name=防腐木材製マシン外装
+tile.sawmill_conveyor.name=製材機用コンベア
+
+# recipemaps
+recipemap.sawmill.name=製材機

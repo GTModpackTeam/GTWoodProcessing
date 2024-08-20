@@ -6,7 +6,14 @@
     "mcversion": "${mcversion}",
     "logoFile": "",
     "url": "",
-    "authorList": [],
+    "authorList": [
+        "sysnote8main",
+        "tier940",
+        "MrKono"
+    ],
     "credits": "",
-    "dependencies": []
+    "dependencies": [
+        "chickenchunks",
+        "gregtech"
+    ]
 }]
