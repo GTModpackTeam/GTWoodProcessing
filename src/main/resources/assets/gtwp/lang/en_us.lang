@@ -6,7 +6,7 @@ gtwp.machine.sawmill.tooltip=Nooo! Do not saw me..
 gtwp.machine.sawmill.tooltip.1=§dAuthor:§f @Quarri6343, @tier940
 
 # block
-tile.gte_metal_casing.sawmill_casing.name=Treated Wood Machine Casing
+tile.gtwp_metal_casing.sawmill_casing.name=Treated Wood Machine Casing
 tile.sawmill_conveyor.name=Sawmill Conveyor
 
 # recipemaps

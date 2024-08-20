@@ -6,7 +6,7 @@ gtwp.machine.sawmill.tooltip=Nooooo!不要砍我...
 gtwp.machine.sawmill.tooltip.1=§d作者:§f @Quarri6343, @tier940
 
 # block
-tile.gte_metal_casing.sawmill_casing.name=防腐木机械外壳
+tile.gtwp_metal_casing.sawmill_casing.name=防腐木机械外壳
 tile.sawmill_conveyor.name=锯木机传送带
 
 # recipemaps
