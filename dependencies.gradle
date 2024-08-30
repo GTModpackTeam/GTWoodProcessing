@@ -42,6 +42,7 @@ dependencies {
     api("codechicken:codechickenlib:3.2.3.358") // CCL 3.2.3.358
     api("com.cleanroommc:groovyscript:1.1.2") { transitive = false } // GrS 1.1.2
     api("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.700") // CrT 4.1.20.700
+    api("appeng:ae2-uel:v0.56.4") { transitive = false } // AE2 0.56.4(IAEWrench access error)
     api rfg.deobf("curse.maven:ctm-267602:2915363") // CTM 1.0.2.31
 
     // Hard Dependencies
@@ -58,13 +59,6 @@ dependencies {
     compileOnly rfg.deobf("curse.maven:binnies-mods-patched-899182:5492997") // Binnie's Mods Patched 2.5.1.212
     if (project.debug_all.toBoolean() || project.debug_ffm.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:forestry-59751:2684780") // Forestry 5.8.2.387
-
-        // Debug Gendustry
-        if (project.debug_all.toBoolean() || project.debug_gendustry.toBoolean()) {
-            runtimeOnlyNonPublishable rfg.deobf("curse.maven:bdlib-70496:2518031") // BdLib 1.14.3.12
-            runtimeOnlyNonPublishable rfg.deobf("curse.maven:gendustry-70492:2516215") // Gendustry 1.6.5.8
-            runtimeOnlyNonPublishable rfg.deobf("curse.maven:gendustry-jei-addon-301364:2609434") // Gendustry JEI Addon 1.0.2
-        }
 
         // Debug Binnies
         if (project.debug_all.toBoolean() || project.debug_binnies.toBoolean()) {

@@ -1,4 +1,4 @@
-package gtexpert.gtwp.integration.ffm.loaders.recipes;
+package gtexpert.gtwp.integration.forestry.loaders.recipes;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,7 +17,7 @@ import gtexpert.gtwp.api.ModValues;
 import gtexpert.gtwp.api.util.Mods;
 import gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
 
-public class FFMWoodRecipe {
+public class ForestryWoodRecipe {
 
     private static final String mcModId = Mods.Forestry.name();
     private static List<WoodTypeEntry> DEFAULT_ENTRIES;

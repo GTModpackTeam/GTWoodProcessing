@@ -11,4 +11,8 @@ public class GTWPTextures {
 
     public static SimpleOverlayRenderer SAWMILL_CASING;
     public static OrientedOverlayRenderer SAWMILL_OVERLAY = new OrientedOverlayRenderer("machines/sawmill");
+
+    public static void preInit() {
+        SAWMILL_CASING = new SimpleOverlayRenderer("casings/sawmill_casing");
+    }
 }

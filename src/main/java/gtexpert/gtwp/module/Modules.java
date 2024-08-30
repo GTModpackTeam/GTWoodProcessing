@@ -13,7 +13,7 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_JEI = "jei_integration";
     public static final String MODULE_TOP = "top_integration";
     public static final String MODULE_CT = "ct_integration";
-    public static final String MODULE_FFM = "ffm_integration";
+    public static final String MODULE_FORESTRY = "forestry_integration";
     public static final String MODULE_GENDUSTRY = "gendustry_integration";
     public static final String MODULE_CHISEL = "chisel_integration";
     public static final String MODULE_AE = "ae_integration";

@@ -11,8 +11,7 @@
 
 ## Info
 1. GregTech Wood Processing(GTWP) is a mod that integrates recipes related to wood processing and accommodates various mods.
-2. It can also be used outside ModPack... We leave it to you to decide how to use it.
-3. **Check with [Curseforge](https://www.curseforge.com/minecraft/mc-mods/gtwp) or [Modrinth](https://modrinth.com/mod/gtwp) to see what changes have been made!!**
+2. **Check with [Curseforge](https://www.curseforge.com/minecraft/mc-mods/gtwp) or [Modrinth](https://modrinth.com/mod/gtwp) to see what changes have been made!!**
 
 ## Credits
 

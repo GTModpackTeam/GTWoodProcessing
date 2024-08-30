@@ -1,4 +1,4 @@
-package gtexpert.gtwp.integration.ffm;
+package gtexpert.gtwp.integration.forestry;
 
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
@@ -6,19 +6,19 @@ import gtexpert.gtwp.api.ModValues;
 import gtexpert.gtwp.api.modules.TModule;
 import gtexpert.gtwp.api.util.Mods;
 import gtexpert.gtwp.integration.GTWPIntegrationSubmodule;
-import gtexpert.gtwp.integration.ffm.loaders.recipes.FFMWoodRecipe;
+import gtexpert.gtwp.integration.forestry.loaders.recipes.ForestryWoodRecipe;
 import gtexpert.gtwp.module.Modules;
 
 @TModule(
-         moduleID = Modules.MODULE_FFM,
+         moduleID = Modules.MODULE_FORESTRY,
          containerID = ModValues.MODID,
          modDependencies = Mods.Names.FORESTRY,
-         name = "GTWoodProcessing Forestry For Minecraft Integration",
-         description = "Forestry For Minecraft Integration Module")
-public class FFMModule extends GTWPIntegrationSubmodule {
+         name = "GTWoodProcessing Forestry Integration",
+         description = "Forestry Integration Module")
+public class ForestryModule extends GTWPIntegrationSubmodule {
 
     @Override
     public void postInit(FMLPostInitializationEvent event) {
-        FFMWoodRecipe.init();
+        ForestryWoodRecipe.init();
     }
 }
