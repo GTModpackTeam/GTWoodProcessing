@@ -18,6 +18,7 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_CHISEL = "chisel_integration";
     public static final String MODULE_AE = "ae_integration";
     public static final String MODULE_AEA = "aeadditions_integration";
+    public static final String MODULE_ADVROCKETRY = "advrocketry_integration";
     public static final String MODULE_NAE2 = "nae2_integration";
     public static final String MODULE_BINNIES = "binnies_integration";
     public static final String MODULE_BOTANY = "botany_integration";

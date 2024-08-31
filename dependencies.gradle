@@ -57,7 +57,7 @@ dependencies {
     // Debug Forestry
     compileOnly rfg.deobf("curse.maven:forestry-59751:2684780") // Forestry 5.8.2.387
     compileOnly rfg.deobf("curse.maven:binnies-mods-patched-899182:5492997") // Binnie's Mods Patched 2.5.1.212
-    if (project.debug_all.toBoolean() || project.debug_ffm.toBoolean()) {
+    if (project.debug_all.toBoolean() || project.debug_forestry.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:forestry-59751:2684780") // Forestry 5.8.2.387
 
         // Debug Binnies
@@ -69,5 +69,11 @@ dependencies {
     // Debug GTFO
     if (project.debug_all.toBoolean() || project.debug_gtfo.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:gregtech-food-option-477021:5487400") // GTFO 1.11.2.1
+    }
+
+    // Advanced Rocketry
+    if (project.debug_all.toBoolean() || project.debug_advrocket.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:libvulpes-236541:3801015") // LibVulpes 0.4.2-25
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:advanced-rocketry-236542:4671856") // Advanced Rocketry 2.0.0-17
     }
 }

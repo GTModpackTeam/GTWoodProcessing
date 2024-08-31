@@ -2,6 +2,10 @@ package gtexpert.gtwp;
 
 import java.util.function.Function;
 
+import gregtech.GTInternalTags;
+
+import gtexpert.gtwp.api.util.Mods;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -27,7 +31,12 @@ import gtexpert.gtwp.module.Modules;
      modid = Tags.MODID,
      name = Tags.MODNAME,
      version = Tags.VERSION,
-     dependencies = "")
+     updateJSON = "https://forge.curseupdate.com/1093753/gtwoodprocessing",
+     acceptedMinecraftVersions = "[1.12.2,1.13)",
+     dependencies = GTInternalTags.DEP_VERSION_STRING + "after:" + Mods.Names.GREGTECH_FOOD_OPTION + ";" +
+             "after:" + Mods.Names.THAUMCRAFT + ";" + "after:" + Mods.Names.FORESTRY + ";" +
+             "after:" + Mods.Names.EXTRA_TREES + ";"+ "after:" + Mods.Names.ADVANCED_ROCKETRY + ";")
+@Mod.EventBusSubscriber(modid = ModValues.MODID)
 public class GTWPMod {
 
     private ModuleManager moduleManager;
