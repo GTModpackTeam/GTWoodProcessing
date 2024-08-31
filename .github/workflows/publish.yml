@@ -79,11 +79,11 @@ jobs:
           github-draft: false
           github-prerelease: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          modrinth-id: 'ipueNiWG'
+          modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
           modrinth-token: "${{ secrets.MODRINTH_API_KEY }}"
           modrinth-dependencies: |
             tULldUx4(required)
-          curseforge-id: '851103'
+          curseforge-id: ${{ env.CURSEFORGE_PROJECT_ID }}
           curseforge-token: "${{ secrets.CURSEFORGE_API_KEY }}"
           curseforge-dependencies: |
             gregtech-ce-unofficial(required)
