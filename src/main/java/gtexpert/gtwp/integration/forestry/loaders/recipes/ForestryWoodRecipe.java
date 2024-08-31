@@ -19,7 +19,7 @@ import gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
 
 public class ForestryWoodRecipe {
 
-    private static final String mcModId = Mods.Forestry.name();
+    private static final String mcModId = Mods.Names.FORESTRY;
     private static List<WoodTypeEntry> DEFAULT_ENTRIES;
     private static List<WoodTypeEntry> FIREPROOF_ENTRIES;
 
@@ -63,13 +63,14 @@ public class ForestryWoodRecipe {
     private static WoodTypeEntry getEntry(String woodName, int plankMeta, int logMeta, int slabMeta, int plankId,
                                           int logId, int slabId, String separator) {
         return new WoodTypeEntry.Builder(mcModId, woodName)
-                .planks(Mods.Forestry.getItem("planks." + separator + plankId, 1, plankMeta), null)
                 .log(Mods.Forestry.getItem("logs." + separator + logId, 1, logMeta)).removeCharcoalRecipe()
+                .planks(Mods.Forestry.getItem("planks." + separator + plankId, 1, plankMeta), null)
                 .door(Mods.Forestry.getItem("doors." + separator + woodName), null)
                 .slab(Mods.Forestry.getItem("slabs." + separator + slabId, 1, slabMeta), null)
                 .fence(Mods.Forestry.getItem("fences." + separator + plankId, 1, plankMeta), null)
                 .fenceGate(Mods.Forestry.getItem("fence.gates." + separator + woodName), null)
                 .stairs(Mods.Forestry.getItem("stairs." + separator + woodName), null).addStairsRecipe()
+                .registerAllUnificationInfo()
                 .build();
     }
 

@@ -13,48 +13,47 @@ public class GTFOWoodRecipe {
 
     private static List<WoodTypeEntry> getDefaultEntries() {
         if (DEFAULT_ENTRIES == null) {
-            final String mcModId = Mods.GregTechFoodOption.name();
+            final String mcModId = Mods.Names.GREGTECH_FOOD_OPTION;
             return DEFAULT_ENTRIES = Arrays.asList(
                     new WoodTypeEntry.Builder(mcModId, "banana")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1))
-                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "orange")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1, 4)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 1), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1, 4))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "mango")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1, 8)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 2), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1, 8))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "apricot")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1, 12)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 3), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_0", 1, 12))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "lemon")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 4), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "lime")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1, 4)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 5), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1, 4))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "olive")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1, 8)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 6), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1, 8))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "rainbowwood")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1, 12)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 7), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_1", 1, 12))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "nutmeg")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_2", 1)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 8), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_2", 1))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "coconut")
+                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_2", 1, 4)).removeCharcoalRecipe()
                             .planks(Mods.GregTechFoodOption.getItem("gtfo_planks_0", 1, 9), null)
-                            .log(Mods.GregTechFoodOption.getItem("gtfo_log_2", 1, 4))
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -62,7 +61,7 @@ public class GTFOWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(true, entry, Mods.GregTechFoodOption.name());
+            GTWPWoodRecipeLoader.removePlankRecipe(true, entry, Mods.Names.GREGTECH_FOOD_OPTION);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);

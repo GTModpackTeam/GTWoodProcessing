@@ -14,12 +14,11 @@ public class AdvancedRocketryWoodRecipe {
 
     private static List<WoodTypeEntry> getDefaultEntries() {
         if (DEFAULT_ENTRIES == null) {
-            final String mcModId = Mods.AdvancedRocketry.name();
+            final String mcModId = Mods.Names.ADVANCED_ROCKETRY;
             return DEFAULT_ENTRIES = Arrays.asList(
                     new WoodTypeEntry.Builder(mcModId, "alien")
-                            .planks(Mods.AdvancedRocketry.getItem("planks", 1), null)
-                            .log(Mods.AdvancedRocketry.getItem("alienwood", 1))
-                            .registerAllUnificationInfo()
+                            .log(Mods.AdvancedRocketry.getItem("alienwood", 1)).removeCharcoalRecipe()
+                            .planks(Mods.AdvancedRocketry.getItem("planks", 1), "advancedrocketry_alien_plank")
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -29,6 +28,8 @@ public class AdvancedRocketryWoodRecipe {
         ModHandler.removeRecipeByName(Mods.AdvancedRocketry.getResource("alienwoodplanks"));
 
         for (WoodTypeEntry entry : getDefaultEntries()) {
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.ADVANCED_ROCKETRY);
+
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
