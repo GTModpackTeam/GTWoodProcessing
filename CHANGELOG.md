@@ -2,10 +2,10 @@
 ## New Integration
 - Project: Vibrant Journeys Integration
 
-* * *
-
 ## Fix Integration
 - Thaumcraft
+
+* * *
 
 # v1.0.1
 ## New Integration
