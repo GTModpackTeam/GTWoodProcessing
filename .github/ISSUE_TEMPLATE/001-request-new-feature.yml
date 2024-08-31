@@ -1,0 +1,26 @@
+name: 'Request New Feature'
+description: Request a new feature.
+labels:
+  - "enhancement"
+body:
+  - type: input
+    id: modname
+    attributes:
+      label: CF Mod Name
+      placeholder: ""
+    validations:
+      required: true
+  - type: input
+    id: modurl
+    attributes:
+      label: CF Mod URL
+      placeholder: "https://www.curseforge.com/minecraft/mc-mods/XXXXXXXX"
+    validations:
+      required: true
+  - type: textarea
+    id: otherinfo
+    attributes:
+      label: Other Information
+      description: Any other information you would like to provide or discuss.
+    validations:
+      required: false
