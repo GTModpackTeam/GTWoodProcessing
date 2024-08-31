@@ -9,8 +9,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
+import gtexpert.gtwp.api.ModValues;
+import gtexpert.gtwp.api.modules.TModule;
 import gtexpert.gtwp.module.BaseModule;
+import gtexpert.gtwp.module.Modules;
 
+@TModule(
+         moduleID = Modules.MODULE_INTEGRATION,
+         containerID = ModValues.MODID,
+         name = "GTWoodProcessing Integration",
+         description = "General GTWoodProcessing Integration Module. Disabling this disables all integration modules.")
 public class GTWPIntegrationModule extends BaseModule {
 
     public static final Logger logger = LogManager.getLogger("GTWoodProcessing Mod Integration");

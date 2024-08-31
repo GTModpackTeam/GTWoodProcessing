@@ -1,13 +1,12 @@
 package gtexpert.gtwp.integration.advrocketry.recipes;
 
-import gregtech.api.recipes.ModHandler;
-import gregtech.loaders.WoodTypeEntry;
-
-import gtexpert.gtwp.api.util.Mods;
-import gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
-
 import java.util.Arrays;
 import java.util.List;
+
+import gregtech.api.recipes.ModHandler;
+import gregtech.loaders.WoodTypeEntry;
+import gtexpert.gtwp.api.util.Mods;
+import gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
 
 public class AdvancedRocketryWoodRecipe {
 

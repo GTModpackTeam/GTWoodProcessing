@@ -10,8 +10,6 @@ import gtexpert.gtwp.integration.GTWPIntegrationSubmodule;
 import gtexpert.gtwp.integration.advrocketry.recipes.AdvancedRocketryWoodRecipe;
 import gtexpert.gtwp.module.Modules;
 
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-
 @TModule(
          moduleID = Modules.MODULE_ADVROCKETRY,
          containerID = ModValues.MODID,
