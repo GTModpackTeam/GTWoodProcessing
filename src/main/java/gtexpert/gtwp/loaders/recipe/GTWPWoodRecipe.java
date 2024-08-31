@@ -28,7 +28,7 @@ public class GTWPWoodRecipe {
 
     private static List<WoodTypeEntry> getDefaultEntries() {
         if (DEFAULT_ENTRIES == null) {
-            final String mcModId = Mods.Vanilla.name();
+            final String mcModId = Mods.Names.VANILLA;
             return DEFAULT_ENTRIES = Arrays.asList(
                     new WoodTypeEntry.Builder(mcModId, "oak")
                             .planks(new ItemStack(Blocks.PLANKS), null)
@@ -92,7 +92,8 @@ public class GTWPWoodRecipe {
 
     private static void planks() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(true, entry, Mods.GregTech.name());
+            GTWPWoodRecipeLoader.removePlankRecipe(true, entry, Mods.Names.GREGTECH);
+
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
         }

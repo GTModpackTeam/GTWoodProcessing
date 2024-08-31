@@ -14,7 +14,7 @@ import gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
 
 public class ExtraTreesWoodRecipe {
 
-    private static final String mcModId = Mods.ExtraTrees.name();
+    private static final String mcModId = Mods.Names.EXTRA_TREES;
 
     private static List<WoodTypeEntry> DEFAULT_ENTRIES;
     private static List<WoodTypeEntry> FIREPROOF_ENTRIES;
@@ -50,22 +50,23 @@ public class ExtraTreesWoodRecipe {
     private static WoodTypeEntry getEntryByName(String woodName, int plankId, int logId, int slabId, int plankMeta,
                                                 int logMeta, int slabMeta) {
         return new WoodTypeEntry.Builder(mcModId, woodName)
-                .planks(Mods.ExtraTrees.getItem("planks." + plankId, 1, plankMeta), null)
                 .log(Mods.ExtraTrees.getItem("logs." + logId, 1, logMeta)).removeCharcoalRecipe()
+                .planks(Mods.ExtraTrees.getItem("planks." + plankId, 1, plankMeta), null)
                 .door(Mods.ExtraTrees.getItem("doors." + woodName), null)
                 .slab(Mods.ExtraTrees.getItem("slabs." + slabId, 1, slabMeta), null)
                 .fence(Mods.ExtraTrees.getItem("fences." + plankId, 1, plankMeta), null)
                 .fenceGate(Mods.ExtraTrees.getItem("fence.gates." + woodName), null)
                 .stairs(Mods.ExtraTrees.getItem("stairs." + woodName), null).addStairsRecipe()
+                .registerAllUnificationInfo()
                 .build();
     }
 
     private static WoodTypeEntry getFireProofEntryByName(String woodName, int plankId, int logId, int slabId,
                                                          int plankMeta, int logMeta, int slabMeta) {
         return new WoodTypeEntry.Builder(mcModId, woodName)
+                .log(Mods.ExtraTrees.getItem("logs.fireproof." + logId, 1, logMeta)).removeCharcoalRecipe()
                 .planks(Mods.ExtraTrees.getItem("planks.fireproof." + plankId, 1, plankMeta),
                         "fireproof_planks_" + woodName)
-                .log(Mods.ExtraTrees.getItem("logs.fireproof." + logId, 1, logMeta)).removeCharcoalRecipe()
                 .slab(Mods.ExtraTrees.getItem("slabs.fireproof." + slabId, 1, slabMeta),
                         "fireproof_slab_" + woodName)
                 .fence(Mods.ExtraTrees.getItem("fences.fireproof." + plankId, 1, plankMeta),
@@ -75,6 +76,7 @@ public class ExtraTreesWoodRecipe {
                 .stairs(Mods.ExtraTrees.getItem("stairs.fireproof." + woodName),
                         "fireproof_stair_" + woodName)
                 .addStairsRecipe()
+                .registerAllUnificationInfo()
                 .build();
     }
 

@@ -76,4 +76,9 @@ dependencies {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:libvulpes-236541:3801015") // LibVulpes 0.4.2-25
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:advanced-rocketry-236542:4671856") // Advanced Rocketry 2.0.0-17
     }
+
+    // Project: Vibrant Journeys
+    if (project.debug_all.toBoolean() || project.debug_pvj.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:project-vibrant-journeys-300297:2775566") // Project: Vibrant Journeys 1.6.4
+    }
 }
