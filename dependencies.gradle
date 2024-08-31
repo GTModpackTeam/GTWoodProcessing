@@ -66,19 +66,25 @@ dependencies {
         }
     }
 
-    // Debug GTFO
+    // Debug GregTech Food Option
     if (project.debug_all.toBoolean() || project.debug_gtfo.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:gregtech-food-option-477021:5487400") // GTFO 1.11.2.1
     }
 
-    // Advanced Rocketry
+    // Debug Advanced Rocketry
     if (project.debug_all.toBoolean() || project.debug_advrocket.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:libvulpes-236541:3801015") // LibVulpes 0.4.2-25
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:advanced-rocketry-236542:4671856") // Advanced Rocketry 2.0.0-17
     }
 
-    // Project: Vibrant Journeys
+    // Debug Project: Vibrant Journeys
     if (project.debug_all.toBoolean() || project.debug_pvj.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:project-vibrant-journeys-300297:2775566") // Project: Vibrant Journeys 1.6.4
+    }
+
+    // Debug Plants
+    if (project.debug_all.toBoolean() || project.debug_plants.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:placebo-283644:4629597") // Placebo 1.6.1
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:plants-257229:2697165") // Plants 2.10.7
     }
 }
