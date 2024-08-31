@@ -25,8 +25,8 @@ env:
   NAME: "GTWoodProcessing"
 
   # Curseforge and Modrinth project IDs
-  CURSEFORGE_PROJECT_ID: ""
-  MODRINTH_PROJECT_ID: ""
+  CURSEFORGE_PROJECT_ID: "1093753"
+  MODRINTH_PROJECT_ID: "LRBGeIQP"
 
 concurrency:
   group: publish-${{ github.head_ref || github.ref }}
