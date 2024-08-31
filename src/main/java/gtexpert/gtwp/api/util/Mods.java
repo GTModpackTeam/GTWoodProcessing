@@ -26,6 +26,7 @@ public enum Mods {
     AEAdditions(Names.AE_ADDITIONS),
     AE2FluidCrafting(Names.AE2_FLUID_CRAFTING),
     AppliedEnergistics2(Names.APPLIED_ENERGISTICS2),
+    AdvancedRocketry(Names.ADVANCED_ROCKETRY),
     Avaritia(Names.AVARITIA),
     Avaritiaaddons(Names.AVARITIAADDONS),
     Baubles(Names.BAUBLES),
@@ -122,6 +123,7 @@ public enum Mods {
         public static final String AE_ADDITIONS = "aeadditions";
         public static final String AE2_FLUID_CRAFTING = "ae2fc";
         public static final String APPLIED_ENERGISTICS2 = "appliedenergistics2";
+        public static final String ADVANCED_ROCKETRY = "advancedrocketry";
         public static final String AVARITIA = "avaritia";
         public static final String AVARITIAADDONS = "avaritiaddons";
         public static final String BAUBLES = "baubles";
