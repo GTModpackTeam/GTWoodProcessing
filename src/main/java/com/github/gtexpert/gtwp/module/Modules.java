@@ -33,6 +33,7 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_TC = "tc_integration";
     public static final String MODULE_TE = "te_integration";
     public static final String MODULE_PVJ = "pvj_integration";
+    public static final String MODULE_PLANTS = "plants_integration";
 
     @Override
     public String getID() {

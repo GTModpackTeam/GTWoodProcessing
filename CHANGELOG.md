@@ -1,6 +1,12 @@
+# v1.0.3
+## New Integration
+- Plants
+
+* * *
+
 # v1.0.2
 ## New Integration
-- Project: Vibrant Journeys Integration
+- Project: Vibrant Journeys
 
 ## Fix Integration
 - Thaumcraft

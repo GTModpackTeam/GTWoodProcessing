@@ -91,6 +91,9 @@ jobs:
             thaumcraft(recommended)
             forestry(recommended)
             binnies-mods-patched(recommended)
+            advanced-rocketry(recommended)
+            project-vibrant-journeys(recommended)
+            plants(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
