@@ -95,6 +95,7 @@ public enum Mods {
     ProjectRedIllumination(Names.PROJECT_RED_ILLUMINATION),
     Railcraft(Names.RAILCRAFT),
     RandomThings(Names.RANDOM_THINGS),
+    Roots(Names.ROOTS),
     Plants(Names.PLANTS),
     RefinedStorage(Names.REFINED_STORAGE),
     ProjectVibrantJourneys(Names.PROJECT_VIBRANT_JOURNEYS),
@@ -198,6 +199,7 @@ public enum Mods {
         public static final String PROJECT_RED_ILLUMINATION = "projectred-illumination";
         public static final String RAILCRAFT = "railcraft";
         public static final String RANDOM_THINGS = "randomthings";
+        public static final String ROOTS = "roots";
         public static final String PLANTS = "plants2";
         public static final String REFINED_STORAGE = "refinedstorage";
         public static final String PROJECT_VIBRANT_JOURNEYS = "pvj";
