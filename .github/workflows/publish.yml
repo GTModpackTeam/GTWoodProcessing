@@ -94,6 +94,7 @@ jobs:
             advanced-rocketry(recommended)
             project-vibrant-journeys(recommended)
             plants(recommended)
+            extra-utilities(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar

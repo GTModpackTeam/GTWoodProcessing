@@ -35,7 +35,8 @@ import com.github.gtexpert.gtwp.module.Modules;
      dependencies = GTInternalTags.DEP_VERSION_STRING + "after:" + Mods.Names.GREGTECH_FOOD_OPTION + ";" +
              "after:" + Mods.Names.THAUMCRAFT + ";" + "after:" + Mods.Names.FORESTRY + ";" +
              "after:" + Mods.Names.EXTRA_TREES + ";" + "after:" + Mods.Names.ADVANCED_ROCKETRY + ";" +
-             "after:" + Mods.Names.PROJECT_VIBRANT_JOURNEYS + ";" + "after:" + Mods.Names.PLANTS + ";")
+             "after:" + Mods.Names.PROJECT_VIBRANT_JOURNEYS + ";" + "after:" + Mods.Names.PLANTS + ";" +
+             "after:" + Mods.Names.EXTRA_UTILITIES + ";")
 @Mod.EventBusSubscriber(modid = ModValues.MODID)
 public class GTWPMod {
 

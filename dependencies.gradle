@@ -87,4 +87,9 @@ dependencies {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:placebo-283644:4629597") // Placebo 1.6.1
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:plants-257229:2697165") // Plants 2.10.7
     }
+
+    // Debug Extra Utilities
+    if (project.debug_all.toBoolean() || project.debug_exu.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:extra-utilities-225561:2678374") // Extra Utilities 1.9.9
+    }
 }
