@@ -99,4 +99,9 @@ dependencies {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:common-capabilities-247007:3053017") // Common Capabilities 2.4.8
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:integrated-dynamics-236307:3159505") // Integrated Dynamics 1.1.11
     }
+
+    // Debug Random Things
+    if (project.debug_all.toBoolean() || project.debug_rthings.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:random-things-59816:2905241") // Random Things 4.2.7.4
+    }
 }
