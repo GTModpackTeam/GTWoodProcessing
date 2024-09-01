@@ -92,4 +92,11 @@ dependencies {
     if (project.debug_all.toBoolean() || project.debug_exu.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:extra-utilities-225561:2678374") // Extra Utilities 1.9.9
     }
+
+    // Debug Integrated Dynamics
+    if (project.debug_all.toBoolean() || project.debug_ids.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:cyclops-core-232758:3159497") // Cyclops Core 1.6.7
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:common-capabilities-247007:3053017") // Common Capabilities 2.4.8
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:integrated-dynamics-236307:3159505") // Integrated Dynamics 1.1.11
+    }
 }

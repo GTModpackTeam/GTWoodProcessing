@@ -95,6 +95,7 @@ jobs:
             project-vibrant-journeys(recommended)
             plants(recommended)
             extra-utilities(recommended)
+            integrated-dynamics(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
