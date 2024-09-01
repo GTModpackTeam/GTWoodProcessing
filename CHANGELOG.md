@@ -6,6 +6,7 @@
 - Rustic
 - Mystical World
 - Roots
+- Biomes O' Plenty
 
 * * *
 
