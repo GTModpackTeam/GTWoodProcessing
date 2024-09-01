@@ -30,6 +30,7 @@ public enum Mods {
     Avaritia(Names.AVARITIA),
     Avaritiaaddons(Names.AVARITIAADDONS),
     Baubles(Names.BAUBLES),
+    BoP(Names.BIOMES_O_PLENTY),
     Botany(Names.BOTANY),
     Chisel(Names.CHISEL),
     CTM(Names.CONNECTED_TEXTURES_MOD),
@@ -135,6 +136,7 @@ public enum Mods {
         public static final String AVARITIA = "avaritia";
         public static final String AVARITIAADDONS = "avaritiaddons";
         public static final String BAUBLES = "baubles";
+        public static final String BIOMES_O_PLENTY = "biomesoplenty";
         public static final String BOTANY = "botany";
         public static final String CHISEL = "chisel";
         public static final String CONNECTED_TEXTURES_MOD = "ctm";
