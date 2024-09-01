@@ -37,7 +37,8 @@ import com.github.gtexpert.gtwp.module.Modules;
              "after:" + Mods.Names.EXTRA_TREES + ";" + "after:" + Mods.Names.ADVANCED_ROCKETRY + ";" +
              "after:" + Mods.Names.PROJECT_VIBRANT_JOURNEYS + ";" + "after:" + Mods.Names.PLANTS + ";" +
              "after:" + Mods.Names.EXTRA_UTILITIES + ";" + "after:" + Mods.Names.INTERGRATED_DYNAMICS + ";" +
-             "after:" + Mods.Names.RANDOM_THINGS + ";" + "after:" + Mods.Names.RUSTIC + ";")
+             "after:" + Mods.Names.RANDOM_THINGS + ";" + "after:" + Mods.Names.RUSTIC + ";" +
+             "after:" + Mods.Names.MYSTICAL_WORLD + ";")
 @Mod.EventBusSubscriber(modid = ModValues.MODID)
 public class GTWPMod {
 

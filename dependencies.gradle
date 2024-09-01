@@ -109,4 +109,15 @@ dependencies {
     if (project.debug_all.toBoolean() || project.debug_rustic.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:rustic-256141:3107974") // Rustic 1.1.7
     }
+
+    // Debug Mystical World
+    if (project.debug_all.toBoolean() || project.debug_mworld.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:patchouli-306770:3162874") // Patchouli 1.0-23.6
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:mysticallib-277064:3483816") // MysticalLib 1.13.0
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:mystical-world-282940:3460961") // Mystical World 1.11.0
+
+        if (project.debug_all.toBoolean() || project.debug_roots.toBoolean()) {
+            runtimeOnlyNonPublishable rfg.deobf("curse.maven:roots-246183:5193525") // Roots 3.1.9.2
+        }
+    }
 }

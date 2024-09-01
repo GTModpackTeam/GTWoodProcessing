@@ -98,6 +98,8 @@ jobs:
             integrated-dynamics(recommended)
             random-things(recommended)
             rustic(recommended)
+            mystical-world(recommended)
+            roots(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
