@@ -97,6 +97,7 @@ jobs:
             extra-utilities(recommended)
             integrated-dynamics(recommended)
             random-things(recommended)
+            rustic(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
