@@ -97,6 +97,7 @@ public enum Mods {
     Plants(Names.PLANTS),
     RefinedStorage(Names.REFINED_STORAGE),
     ProjectVibrantJourneys(Names.PROJECT_VIBRANT_JOURNEYS),
+    Rustic(Names.RUSTIC),
     Thaumcraft(Names.THAUMCRAFT),
     ThaumicEnergistics(Names.THAUMIC_ENERGISTICS),
     TheOneProbe(Names.THE_ONE_PROBE),
@@ -198,6 +199,7 @@ public enum Mods {
         public static final String PLANTS = "plants2";
         public static final String REFINED_STORAGE = "refinedstorage";
         public static final String PROJECT_VIBRANT_JOURNEYS = "pvj";
+        public static final String RUSTIC = "rustic";
         public static final String THAUMCRAFT = "thaumcraft";
         public static final String THAUMIC_ENERGISTICS = "haumicenergistics";
         public static final String THE_ONE_PROBE = "theoneprobe";

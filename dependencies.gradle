@@ -104,4 +104,9 @@ dependencies {
     if (project.debug_all.toBoolean() || project.debug_rthings.toBoolean()) {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:random-things-59816:2905241") // Random Things 4.2.7.4
     }
+
+    // Debug Rustic
+    if (project.debug_all.toBoolean() || project.debug_rustic.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:rustic-256141:3107974") // Rustic 1.1.7
+    }
 }

@@ -36,6 +36,7 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_PVJ = "pvj_integration";
     public static final String MODULE_PLANTS = "plants_integration";
     public static final String MODULE_RTHINGS = "rthings_integration";
+    public static final String MODULE_RUSTIC = "rustic_integration";
     public static final String MODULE_IDS = "ids_integration";
 
     @Override
