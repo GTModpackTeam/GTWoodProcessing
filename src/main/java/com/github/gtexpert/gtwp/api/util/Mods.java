@@ -85,6 +85,7 @@ public enum Mods {
     MagicBees(Names.MAGIC_BEES),
     ModularUI(Names.MODULRAUI),
     MixinBooter(Names.MIXINBOOTER),
+    MysticalWorld(Names.MYSTICAL_WORLD),
     NeevesAE2(Names.NEEVES_AE2),
     Nothirium(Names.NOTHIRIUM),
     NuclearCraft(Names.NUCLEAR_CRAFT, versionExcludes("2o")),
@@ -188,6 +189,7 @@ public enum Mods {
         public static final String MAGIC_BEES = "magicbees";
         public static final String MODULRAUI = "modularui";
         public static final String MIXINBOOTER = "mixinbooter";
+        public static final String MYSTICAL_WORLD = "mysticalworld";
         public static final String NEEVES_AE2 = "nae2";
         public static final String NOTHIRIUM = "nothirium";
         public static final String NUCLEAR_CRAFT = "nuclearcraft";
