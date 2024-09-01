@@ -25,6 +25,7 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_EXBEES = "extrabees_integration";
     public static final String MODULE_EXCPUS = "extracpus_integration";
     public static final String MODULE_EXTREES = "extratrees_integration";
+    public static final String MODULE_EXUTILITIES = "exu_integration";
     public static final String MODULE_GENETICS = "genetics_integration";
     public static final String MODULE_GTFO = "gtfo_integration";
     public static final String MODULE_EIO = "eio_integration";
