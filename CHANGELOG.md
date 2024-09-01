@@ -1,3 +1,10 @@
+# v1.1.0
+## New Integration
+- Extra Utilities 2
+- Integrated Dynamics
+
+* * *
+
 # v1.0.3
 ## New Integration
 - Plants

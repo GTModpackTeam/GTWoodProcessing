@@ -36,7 +36,7 @@ import com.github.gtexpert.gtwp.module.Modules;
              "after:" + Mods.Names.THAUMCRAFT + ";" + "after:" + Mods.Names.FORESTRY + ";" +
              "after:" + Mods.Names.EXTRA_TREES + ";" + "after:" + Mods.Names.ADVANCED_ROCKETRY + ";" +
              "after:" + Mods.Names.PROJECT_VIBRANT_JOURNEYS + ";" + "after:" + Mods.Names.PLANTS + ";" +
-             "after:" + Mods.Names.EXTRA_UTILITIES + ";")
+             "after:" + Mods.Names.EXTRA_UTILITIES + ";" + "after:" + Mods.Names.INTERGRATED_DYNAMICS + ";")
 @Mod.EventBusSubscriber(modid = ModValues.MODID)
 public class GTWPMod {
 

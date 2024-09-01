@@ -397,4 +397,22 @@ public class GTWPWoodRecipeLoader {
         ModHandler.removeRecipeByName(
                 new ResourceLocation(prefix, hasPlanksRecipe ? entry.planksRecipeName + "_saw" : name + "_planks_saw"));
     }
+
+    public static void removeCharcoalRecipe(@NotNull WoodTypeEntry entry) {
+        if (!ConfigHolder.recipes.harderCharcoalRecipe) return;
+
+        final ItemStack outputStack = FurnaceRecipes.instance().getSmeltingResult(entry.log);
+        if (outputStack.getItem() == Items.COAL && outputStack.getItemDamage() == 1) {
+            ModHandler.removeFurnaceSmelting(entry.log);
+        }
+    }
+
+    public static void removeCharcoalRecipe(@NotNull ItemStack log) {
+        if (!ConfigHolder.recipes.harderCharcoalRecipe) return;
+
+        final ItemStack outputStack = FurnaceRecipes.instance().getSmeltingResult(log);
+        if (outputStack.getItem() == Items.COAL && outputStack.getItemDamage() == 1) {
+            ModHandler.removeFurnaceSmelting(log);
+        }
+    }
 }
