@@ -2,6 +2,7 @@
 ## New Integration
 - Extra Utilities 2
 - Integrated Dynamics
+- Random Things
 
 * * *
 

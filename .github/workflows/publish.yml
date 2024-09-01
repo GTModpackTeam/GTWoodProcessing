@@ -96,6 +96,7 @@ jobs:
             plants(recommended)
             extra-utilities(recommended)
             integrated-dynamics(recommended)
+            random-things(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
