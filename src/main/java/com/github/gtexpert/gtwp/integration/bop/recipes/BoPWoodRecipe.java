@@ -25,6 +25,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("sacred_oak_fence", 1), "sacred_oak_fence")
                             .door(Mods.BoP.getItem("sacred_oak_door", 1), "sacred_oak_door")
                             .boat(Mods.BoP.getItem("boat_sacred_oak", 1), "boat_sacred_oak")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "cherry")
                             .log(Mods.BoP.getItem("log_0", 1, 5)).removeCharcoalRecipe()
@@ -35,6 +36,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("cherry_fence", 1), "cherry_fence")
                             .door(Mods.BoP.getItem("cherry_door", 1), "cherry_door")
                             .boat(Mods.BoP.getItem("boat_cherry", 1), "boat_cherry")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "umbran")
                             .log(Mods.BoP.getItem("log_0", 1, 6)).removeCharcoalRecipe()
@@ -45,6 +47,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("umbran_fence", 1), "umbran_fence")
                             .door(Mods.BoP.getItem("umbran_door", 1), "umbran_door")
                             .boat(Mods.BoP.getItem("boat_umbran", 1), "boat_umbran")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "fir")
                             .log(Mods.BoP.getItem("log_0", 1, 7)).removeCharcoalRecipe()
@@ -55,6 +58,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("fir", 1), "fir")
                             .door(Mods.BoP.getItem("fir_door", 1), "fir_door")
                             .boat(Mods.BoP.getItem("boat_fir", 1), "boat_fir")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "ethereal")
                             .log(Mods.BoP.getItem("log_1", 1, 4)).removeCharcoalRecipe()
@@ -65,6 +69,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("ethereal_fence", 1), "ethereal_fence")
                             .door(Mods.BoP.getItem("ethereal_door", 1), "ethereal_door")
                             .boat(Mods.BoP.getItem("boat_ethereal", 1), "boat_ethereal")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "magic")
                             .log(Mods.BoP.getItem("log_1", 1, 5)).removeCharcoalRecipe()
@@ -75,6 +80,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("magic_fence", 1), "magic_fence")
                             .door(Mods.BoP.getItem("magic_door", 1), "magic_door")
                             .boat(Mods.BoP.getItem("boat_magic", 1), "boat_magic")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "mangrove")
                             .log(Mods.BoP.getItem("log_1", 1, 6)).removeCharcoalRecipe()
@@ -85,6 +91,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("mangrove_fence", 1), "mangrove_fence")
                             .door(Mods.BoP.getItem("mangrove_door", 1), "mangrove_door")
                             .boat(Mods.BoP.getItem("boat_mangrove", 1), "boat_mangrove")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "palm")
                             .log(Mods.BoP.getItem("log_1", 1, 7)).removeCharcoalRecipe()
@@ -95,6 +102,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("palm_fence", 1), "palm_fence")
                             .door(Mods.BoP.getItem("palm_door", 1), "palm_door")
                             .boat(Mods.BoP.getItem("boat_palm", 1), "boat_palm")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "redwood")
                             .log(Mods.BoP.getItem("log_2", 1, 4)).removeCharcoalRecipe()
@@ -105,6 +113,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("redwood_fence", 1), "redwood_fence")
                             .door(Mods.BoP.getItem("redwood_door", 1), "redwood_door")
                             .boat(Mods.BoP.getItem("boat_redwood", 1), "boat_redwood")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "willow")
                             .log(Mods.BoP.getItem("log_2", 1, 5)).removeCharcoalRecipe()
@@ -115,6 +124,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("willow_fence", 1), "willow_fence")
                             .door(Mods.BoP.getItem("willow_door", 1), "willow_door")
                             .boat(Mods.BoP.getItem("boat_willow", 1), "boat_willow")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "pine")
                             .log(Mods.BoP.getItem("log_2", 1, 6)).removeCharcoalRecipe()
@@ -125,6 +135,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("pine_fence", 1), "pine_fence")
                             .door(Mods.BoP.getItem("pine_door", 1), "pine_door")
                             .boat(Mods.BoP.getItem("boat_pine", 1), "boat_pine")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "hellbark")
                             .log(Mods.BoP.getItem("log_2", 1, 7)).removeCharcoalRecipe()
@@ -135,6 +146,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("hellbark_fence", 1), "hellbark_fence")
                             .door(Mods.BoP.getItem("hellbark_door", 1), "hellbark_door")
                             .boat(Mods.BoP.getItem("boat_hellbark", 1), "boat_hellbark")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "jacaranda")
                             .log(Mods.BoP.getItem("log_3", 1, 4)).removeCharcoalRecipe()
@@ -145,6 +157,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("jacaranda_fence", 1), "jacaranda_fence")
                             .door(Mods.BoP.getItem("jacaranda_door", 1), "jacaranda_door")
                             .boat(Mods.BoP.getItem("boat_jacaranda", 1), "boat_jacaranda")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "mahogany")
                             .log(Mods.BoP.getItem("log_3", 1, 5)).removeCharcoalRecipe()
@@ -155,6 +168,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("mahogany_fence", 1), "mahogany_fence")
                             .door(Mods.BoP.getItem("mahogany_door", 1), "mahogany_door")
                             .boat(Mods.BoP.getItem("boat_mahogany", 1), "boat_mahogany")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "ebony")
                             .log(Mods.BoP.getItem("log_3", 1, 6)).removeCharcoalRecipe()
@@ -165,6 +179,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("ebony_fence", 1), "ebony_fence")
                             .door(Mods.BoP.getItem("ebony_door", 1), "ebony_door")
                             .boat(Mods.BoP.getItem("boat_ebony", 1), "boat_ebony")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "eucalyptus")
                             .log(Mods.BoP.getItem("log_3", 1, 7)).removeCharcoalRecipe()
@@ -175,6 +190,7 @@ public class BoPWoodRecipe {
                             .fence(Mods.BoP.getItem("eucalyptus_fence", 1), "eucalyptus_fence")
                             .door(Mods.BoP.getItem("eucalyptus_door", 1), "eucalyptus_door")
                             .boat(Mods.BoP.getItem("boat_eucalyptus", 1), "boat_eucalyptus")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -182,7 +198,7 @@ public class BoPWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.BIOMES_O_PLENTY);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);

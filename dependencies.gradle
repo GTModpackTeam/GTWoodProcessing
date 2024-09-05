@@ -121,7 +121,8 @@ dependencies {
         }
     }
 
+    // Debug Biomes O' Plenty
     if (project.debug_bop.toBoolean() || project.debug_all.toBoolean()) {
-        runtimeOnlyNonPublishable rfg.deobf("curse.maven:biomes-o-plenty-220318:2842510") // Biomes O' Plenty 1.12.2-7.0.1.2444
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:biomes-o-plenty-220318:2842510") // Biomes O' Plenty 7.0.1.2444
     }
 }

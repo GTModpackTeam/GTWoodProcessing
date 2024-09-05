@@ -28,7 +28,7 @@ public class IDsWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.INTERGRATED_DYNAMICS);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
             GTWPWoodRecipeLoader.removeCharcoalRecipe(Mods.IntegratedDynamics.getItem("menril_log_filled", 1));
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);

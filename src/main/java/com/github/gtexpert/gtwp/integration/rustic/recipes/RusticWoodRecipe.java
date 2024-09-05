@@ -18,7 +18,7 @@ public class RusticWoodRecipe {
             return DEFAULT_ENTRIES = Arrays.asList(
                     new WoodTypeEntry.Builder(mcModId, "olive")
                             .log(Mods.Rustic.getItem("log", 1, 0)).removeCharcoalRecipe()
-                            .planks(Mods.Rustic.getItem("planks", 1, 0), "olive_planks")
+                            .planks(Mods.Rustic.getItem("planks", 1, 0), null)
                             .slab(Mods.Rustic.getItem("olive_slab_item", 1), "olive_slab")
                             .fence(Mods.Rustic.getItem("fence_olive", 1), "olive_fence")
                             .fenceGate(Mods.Rustic.getItem("fence_gate_olive", 1), "olive_fence_gate")
@@ -28,7 +28,7 @@ public class RusticWoodRecipe {
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "ironwood")
                             .log(Mods.Rustic.getItem("log", 1, 1)).removeCharcoalRecipe()
-                            .planks(Mods.Rustic.getItem("planks", 1, 1), "ironwood_planks")
+                            .planks(Mods.Rustic.getItem("planks", 1, 1), null)
                             .slab(Mods.Rustic.getItem("ironwood_slab_item", 1), "ironwood_slab")
                             .fence(Mods.Rustic.getItem("fence_ironwood", 1), "ironwood_fence")
                             .fenceGate(Mods.Rustic.getItem("fence_gate_ironwood", 1), "ironwood_fence_gate")
@@ -42,7 +42,7 @@ public class RusticWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.RUSTIC);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);

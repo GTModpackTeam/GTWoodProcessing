@@ -32,7 +32,7 @@ public class RootsWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.ROOTS);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);

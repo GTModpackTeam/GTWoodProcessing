@@ -26,7 +26,7 @@ public class RThingsWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.RANDOM_THINGS);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);

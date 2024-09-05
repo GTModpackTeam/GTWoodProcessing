@@ -30,7 +30,7 @@ public class MWorldWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.MYSTICAL_WORLD);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);

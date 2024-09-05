@@ -29,7 +29,7 @@ public class AdvancedRocketryWoodRecipe {
         ModHandler.removeRecipeByName(Mods.AdvancedRocketry.getResource("alienwoodplanks"));
 
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.ADVANCED_ROCKETRY);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);

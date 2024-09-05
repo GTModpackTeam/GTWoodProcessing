@@ -384,18 +384,21 @@ public class GTWPWoodRecipeLoader {
                 .buildAndRegister();
     }
 
+    public static void removePlankRecipe(boolean removeSawRecipes, @NotNull WoodTypeEntry entry) {
+        removePlankRecipe(removeSawRecipes, entry, entry.modid);
+    }
+
     public static void removePlankRecipe(boolean removeSawRecipes, @NotNull WoodTypeEntry entry,
-                                         @NotNull String otherModId) {
+                                         @NotNull String modId) {
         final String name = entry.woodName;
-        final String prefix = otherModId.isEmpty() ? entry.modid : otherModId;
         final boolean hasPlanksRecipe = entry.planksRecipeName != null;
 
         ModHandler.removeRecipeByName(
-                new ResourceLocation(prefix, hasPlanksRecipe ? entry.planksRecipeName : name + "_planks"));
+                new ResourceLocation(modId, hasPlanksRecipe ? entry.planksRecipeName : name + "_planks"));
 
         if (!removeSawRecipes) return;
         ModHandler.removeRecipeByName(
-                new ResourceLocation(prefix, hasPlanksRecipe ? entry.planksRecipeName + "_saw" : name + "_planks_saw"));
+                new ResourceLocation(modId, hasPlanksRecipe ? entry.planksRecipeName + "_saw" : name + "_planks_saw"));
     }
 
     public static void removeCharcoalRecipe(@NotNull WoodTypeEntry entry) {

@@ -62,7 +62,7 @@ public class GTFOWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(true, entry, Mods.Names.GREGTECH_FOOD_OPTION);
+            GTWPWoodRecipeLoader.removePlankRecipe(true, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);

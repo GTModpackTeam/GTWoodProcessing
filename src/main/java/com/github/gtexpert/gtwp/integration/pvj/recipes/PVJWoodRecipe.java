@@ -175,7 +175,7 @@ public class PVJWoodRecipe {
 
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
-            GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.PROJECT_VIBRANT_JOURNEYS);
+            GTWPWoodRecipeLoader.removePlankRecipe(false, entry);
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(true, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
