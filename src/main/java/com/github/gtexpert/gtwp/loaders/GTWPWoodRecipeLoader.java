@@ -116,13 +116,12 @@ public class GTWPWoodRecipeLoader {
 
         // stairs
         if (!entry.stairs.isEmpty()) {
-            final boolean hasStairRecipe = entry.stairsRecipeName != null;
-            if (entry.addStairsCraftingRecipe) {
-                ModHandler.addShapedRecipe(hasStairRecipe ? prefix + entry.stairsRecipeName : prefix + name + "_stairs",
-                        GTUtility.copy(4, entry.stairs),
-                        "P  ", "PP ", "PPP",
-                        'P', entry.planks.copy());
+            if (entry.stairsRecipeName != null) {
+                ModHandler.removeRecipeByName(new ResourceLocation(entry.modid, entry.stairsRecipeName));
             }
+            ModHandler.addShapedRecipe(prefix + name + "_stairs", GTUtility.copy(4, entry.stairs),
+                    "P  ", "PP ", "PPP",
+                    'P', entry.planks.copy());
 
             // plank -> stairs assembling
             RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()

@@ -41,7 +41,8 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_IDS = "ids_integration";
     public static final String MODULE_MWORLD = "mworld_integration";
     public static final String MODULE_BOP = "bop_integration";
-    public static final String MODULE_IaF = "IaF_integration";
+    public static final String MODULE_IaF = "iaf_integration";
+    public static final String MODULE_WIZARDRY = "wizardry_integration";
 
     @Override
     public String getID() {

@@ -102,6 +102,7 @@ jobs:
             roots(recommended)
             biomes-o-plenty(recommended)
             ice-and-fire-dragons(recommended)
+            wizardry-mod(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar

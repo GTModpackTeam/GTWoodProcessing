@@ -104,6 +104,7 @@ public enum Mods {
     Rustic(Names.RUSTIC),
     Thaumcraft(Names.THAUMCRAFT),
     ThaumicEnergistics(Names.THAUMIC_ENERGISTICS),
+    Wizardry(Names.WIZARDRY),
     TheOneProbe(Names.THE_ONE_PROBE),
     TinkersConstruct(Names.TINKERS_CONSTRUCT),
     TOPAddons(Names.TOP_ADDONS),
@@ -210,6 +211,7 @@ public enum Mods {
         public static final String RUSTIC = "rustic";
         public static final String THAUMCRAFT = "thaumcraft";
         public static final String THAUMIC_ENERGISTICS = "haumicenergistics";
+        public static final String WIZARDRY = "wizardry";
         public static final String THE_ONE_PROBE = "theoneprobe";
         public static final String TINKERS_CONSTRUCT = "tconstruct";
         public static final String TOP_ADDONS = "topaddons";
