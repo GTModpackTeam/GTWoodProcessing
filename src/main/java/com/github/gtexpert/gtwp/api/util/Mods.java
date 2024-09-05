@@ -81,6 +81,7 @@ public enum Mods {
     HWYLA(Names.HWYLA),
     InventoryTweaks(Names.INVENTORY_TWEAKS),
     IntegratedDynamics(Names.INTERGRATED_DYNAMICS),
+    IceAndFire(Names.ICE_AND_FIRE),
     JourneyMap(Names.JOURNEY_MAP),
     JustEnoughItems(Names.JUST_ENOUGH_ITEMS),
     MagicBees(Names.MAGIC_BEES),
@@ -187,6 +188,7 @@ public enum Mods {
         public static final String HWYLA = "hwyla";
         public static final String INVENTORY_TWEAKS = "inventorytweaks";
         public static final String INTERGRATED_DYNAMICS = "integrateddynamics";
+        public static final String ICE_AND_FIRE = "iceandfire";
         public static final String JOURNEY_MAP = "journeymap";
         public static final String JUST_ENOUGH_ITEMS = "jei";
         public static final String MAGIC_BEES = "magicbees";
