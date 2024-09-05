@@ -1,3 +1,9 @@
+# v1.1.1
+## New Integration
+- Ice and Fire: Dragons
+
+* * *
+
 # v1.1.0
 ## New Integration
 - Extra Utilities 2
