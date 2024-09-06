@@ -103,6 +103,9 @@ jobs:
             biomes-o-plenty(recommended)
             ice-and-fire-dragons(recommended)
             wizardry-mod(recommended)
+            traverse-reforged(recommended)
+            nether-update-backport(recommended)
+            the-twilight-forest(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar

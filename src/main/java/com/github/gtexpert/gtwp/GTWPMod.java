@@ -40,7 +40,8 @@ import com.github.gtexpert.gtwp.module.Modules;
              "after:" + Mods.Names.RANDOM_THINGS + ";" + "after:" + Mods.Names.RUSTIC + ";" +
              "after:" + Mods.Names.MYSTICAL_WORLD + ";" + "after:" + Mods.Names.ROOTS + ";" +
              "after:" + Mods.Names.BIOMES_O_PLENTY + ";" + "after:" + Mods.Names.ICE_AND_FIRE + ";" +
-             "after:" + Mods.Names.WIZARDRY + ";")
+             "after:" + Mods.Names.WIZARDRY + ";" + "after:" + Mods.Names.TRAVERES + ";" +
+             "after:" + Mods.Names.TWILIGHT_FOREST)
 @Mod.EventBusSubscriber(modid = ModValues.MODID)
 public class GTWPMod {
 

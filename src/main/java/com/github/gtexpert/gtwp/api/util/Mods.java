@@ -92,6 +92,7 @@ public enum Mods {
     Nothirium(Names.NOTHIRIUM),
     NuclearCraft(Names.NUCLEAR_CRAFT, versionExcludes("2o")),
     NuclearCraftOverhauled(Names.NUCLEAR_CRAFT, versionContains("2o")),
+    NetherUpdateBackport(Names.NETHER_UPDATE_BACKPORT),
     OpenComputers(Names.OPEN_COMPUTERS),
     ProjectRedCore(Names.PROJECT_RED_CORE),
     ProjectRedIllumination(Names.PROJECT_RED_ILLUMINATION),
@@ -103,6 +104,8 @@ public enum Mods {
     ProjectVibrantJourneys(Names.PROJECT_VIBRANT_JOURNEYS),
     Rustic(Names.RUSTIC),
     Thaumcraft(Names.THAUMCRAFT),
+    Traverse(Names.TRAVERES),
+    TwilightForest(Names.TWILIGHT_FOREST),
     ThaumicEnergistics(Names.THAUMIC_ENERGISTICS),
     Wizardry(Names.WIZARDRY),
     TheOneProbe(Names.THE_ONE_PROBE),
@@ -199,6 +202,7 @@ public enum Mods {
         public static final String NEEVES_AE2 = "nae2";
         public static final String NOTHIRIUM = "nothirium";
         public static final String NUCLEAR_CRAFT = "nuclearcraft";
+        public static final String NETHER_UPDATE_BACKPORT = "netherbackport";
         public static final String OPEN_COMPUTERS = "opencomputers";
         public static final String PROJECT_RED_CORE = "projred-core";
         public static final String PROJECT_RED_ILLUMINATION = "projectred-illumination";
@@ -210,6 +214,8 @@ public enum Mods {
         public static final String PROJECT_VIBRANT_JOURNEYS = "pvj";
         public static final String RUSTIC = "rustic";
         public static final String THAUMCRAFT = "thaumcraft";
+        public static final String TRAVERES = "traverse";
+        public static final String TWILIGHT_FOREST = "twilightforest";
         public static final String THAUMIC_ENERGISTICS = "haumicenergistics";
         public static final String WIZARDRY = "wizardry";
         public static final String THE_ONE_PROBE = "theoneprobe";

@@ -32,6 +32,7 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_DEDA = "deda_integration";
     public static final String MODULE_AVARITIA = "avaritia_integration";
     public static final String MODULE_TC = "tc_integration";
+    public static final String MODULE_TRAVERES = "traverse_integration";
     public static final String MODULE_TE = "te_integration";
     public static final String MODULE_PVJ = "pvj_integration";
     public static final String MODULE_PLANTS = "plants_integration";
@@ -42,7 +43,9 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_MWORLD = "mworld_integration";
     public static final String MODULE_BOP = "bop_integration";
     public static final String MODULE_IaF = "iaf_integration";
+    public static final String MODULE_NUB = "nub_integration";
     public static final String MODULE_WIZARDRY = "wizardry_integration";
+    public static final String MODULE_TWILIGHT = "twilight_integration";
 
     @Override
     public String getID() {
