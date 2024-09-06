@@ -1,6 +1,10 @@
-# v1.1.1
+# v1.2.0
 ## New Integration
 - Ice and Fire: Dragons
+- Wizardry
+- Traverse Reforged
+- Nether Update Backport
+- The Twilight Forest
 
 * * *
 

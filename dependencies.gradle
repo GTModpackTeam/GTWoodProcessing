@@ -132,4 +132,19 @@ dependencies {
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:shadowfacts-forgelin-248453:2785465") // Forgelin 1.8.4
         runtimeOnlyNonPublishable rfg.deobf("curse.maven:wizardry-mod-278155:5160012") // Wizardry 0.11.3
     }
+
+    // Debug Traverse Reforged
+    if (project.debug_all.toBoolean() || project.debug_traverse.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:traverse-reforged-267769:2613657") // Traverse Reforged 1.6.0
+    }
+
+    // Debug Nether Update Backport
+    if (project.debug_all.toBoolean() || project.debug_nub.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:nether-update-backport-384529:3140835") // Nether Update Backport 1.0.1
+    }
+
+    // Debug The Twilight Forest
+    if (project.debug_all.toBoolean() || project.debug_twilight.toBoolean()) {
+        runtimeOnlyNonPublishable rfg.deobf("curse.maven:the-twilight-forest-227639:3051450") // The Twilight Forest 3.11.1021
+    }
 }
