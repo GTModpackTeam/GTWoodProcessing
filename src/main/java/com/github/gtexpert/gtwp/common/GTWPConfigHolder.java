@@ -9,6 +9,9 @@ import com.github.gtexpert.gtwp.api.ModValues;
         category = "GTWoodProcessing")
 public class GTWPConfigHolder {
 
+    @Config.Comment({ "Start machine ID", "Default: 10000" })
+    public static int machineID = 10000;
+
     @Config.Name("Gregtech Override")
     @Config.RequiresMcRestart
     public static final GregtechOverride ceuOverride = new GregtechOverride();
