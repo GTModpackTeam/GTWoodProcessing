@@ -10,6 +10,7 @@ public class GTWPMetaTileEntities {
     public static MetaTileEntitySawmill SAWMILL;
 
     public static void init() {
-        SAWMILL = registerMetaTileEntity(GTWPConfigHolder.machineID, new MetaTileEntitySawmill(ModUtility.id("sawmill")));
+        SAWMILL = registerMetaTileEntity(GTWPConfigHolder.machineID,
+                new MetaTileEntitySawmill(ModUtility.id("sawmill")));
     }
 }
