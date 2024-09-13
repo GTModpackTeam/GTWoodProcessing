@@ -29,7 +29,7 @@ import com.github.gtexpert.gtwp.api.util.Mods;
 import com.github.gtexpert.gtwp.common.GTWPConfigHolder;
 import com.github.gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
 
-public class NatureWoodRecipe {
+public class NaturaWoodRecipe {
 
     private static List<WoodTypeEntry> DEFAULT_ENTRIES;
     private static final String mcModId = Mods.Names.NATURA;

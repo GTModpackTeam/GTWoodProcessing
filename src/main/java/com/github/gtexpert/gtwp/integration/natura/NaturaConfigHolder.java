@@ -9,4 +9,4 @@ import com.github.gtexpert.gtwp.module.Modules;
 @Config(modid = ModValues.MODID,
         name = ModValues.MODID + "/integration/" + Modules.MODULE_NATURA,
         category = "Natura")
-public class NatureConfigHolder {}
+public class NaturaConfigHolder {}

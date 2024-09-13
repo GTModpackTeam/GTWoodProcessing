@@ -6,7 +6,7 @@ import com.github.gtexpert.gtwp.api.ModValues;
 import com.github.gtexpert.gtwp.api.modules.TModule;
 import com.github.gtexpert.gtwp.api.util.Mods;
 import com.github.gtexpert.gtwp.integration.GTWPIntegrationSubmodule;
-import com.github.gtexpert.gtwp.integration.natura.recipes.NatureWoodRecipe;
+import com.github.gtexpert.gtwp.integration.natura.recipes.NaturaWoodRecipe;
 import com.github.gtexpert.gtwp.module.Modules;
 
 @TModule(
@@ -15,10 +15,10 @@ import com.github.gtexpert.gtwp.module.Modules;
          modDependencies = Mods.Names.NATURA,
          name = "GTWoodProcessing Natura Integration",
          description = "Natura Integration Module")
-public class NatureModule extends GTWPIntegrationSubmodule {
+public class NaturaModule extends GTWPIntegrationSubmodule {
 
     @Override
     public void postInit(FMLPostInitializationEvent event) {
-        NatureWoodRecipe.init();
+        NaturaWoodRecipe.init();
     }
 }
