@@ -1,8 +1,14 @@
 package com.github.gtexpert.gtwp.integration.botania.recipes;
 
-import com.github.gtexpert.gtwp.api.recipes.GTWPRecipeMaps;
-import com.github.gtexpert.gtwp.api.util.Mods;
-import com.github.gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
+import static gregtech.api.GTValues.*;
+import static gregtech.api.GTValues.LV;
+import static gregtech.api.unification.ore.OrePrefix.dust;
+
+import java.util.Arrays;
+import java.util.List;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 
 import gregtech.api.recipes.ModHandler;
 import gregtech.api.recipes.RecipeMaps;
@@ -11,17 +17,12 @@ import gregtech.api.util.GTUtility;
 import gregtech.common.ConfigHolder;
 import gregtech.loaders.WoodTypeEntry;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-
-import java.util.Arrays;
-import java.util.List;
-
-import static gregtech.api.GTValues.*;
-import static gregtech.api.GTValues.LV;
-import static gregtech.api.unification.ore.OrePrefix.dust;
+import com.github.gtexpert.gtwp.api.recipes.GTWPRecipeMaps;
+import com.github.gtexpert.gtwp.api.util.Mods;
+import com.github.gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
 
 public class BotaniaWoodRecipe {
+
     private static List<WoodTypeEntry> DEFAULT_ENTRIES;
     private static final String mcModId = Mods.Names.BOTANIA;
 
@@ -56,7 +57,7 @@ public class BotaniaWoodRecipe {
         }
 
         // log-associated recipes
-        String[] woodName = {"livingwood", "dreamwood", "shimmerwoodplanks"};
+        String[] woodName = { "livingwood", "dreamwood", "shimmerwoodplanks" };
         for (String name : woodName) {
             ItemStack wood = Mods.Botania.getItem(name);
             ItemStack stair = Mods.Botania.getItem(name + "0stairs");
