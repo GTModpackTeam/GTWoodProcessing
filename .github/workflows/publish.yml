@@ -106,6 +106,7 @@ jobs:
             traverse-reforged(recommended)
             nether-update-backport(recommended)
             the-twilight-forest(recommended)
+            botania(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar

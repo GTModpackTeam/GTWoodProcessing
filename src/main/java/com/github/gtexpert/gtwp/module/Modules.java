@@ -46,6 +46,8 @@ public class Modules implements IModuleContainer {
     public static final String MODULE_NUB = "nub_integration";
     public static final String MODULE_WIZARDRY = "wizardry_integration";
     public static final String MODULE_TWILIGHT = "twilight_integration";
+    public static final String MODULE_BOTANIA = "botania_integration";
+    public static final String MODULE_NATURA = "nature_integration";
 
     @Override
     public String getID() {

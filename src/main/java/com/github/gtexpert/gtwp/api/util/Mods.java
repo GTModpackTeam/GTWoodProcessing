@@ -31,6 +31,7 @@ public enum Mods {
     Avaritiaaddons(Names.AVARITIAADDONS),
     Baubles(Names.BAUBLES),
     BoP(Names.BIOMES_O_PLENTY),
+    Botania(Names.BOTANIA),
     Botany(Names.BOTANY),
     Chisel(Names.CHISEL),
     CTM(Names.CONNECTED_TEXTURES_MOD),
@@ -88,6 +89,7 @@ public enum Mods {
     ModularUI(Names.MODULRAUI),
     MixinBooter(Names.MIXINBOOTER),
     MysticalWorld(Names.MYSTICAL_WORLD),
+    Natura(Names.NATURA),
     NeevesAE2(Names.NEEVES_AE2),
     Nothirium(Names.NOTHIRIUM),
     NuclearCraft(Names.NUCLEAR_CRAFT, versionExcludes("2o")),
@@ -142,6 +144,7 @@ public enum Mods {
         public static final String AVARITIAADDONS = "avaritiaddons";
         public static final String BAUBLES = "baubles";
         public static final String BIOMES_O_PLENTY = "biomesoplenty";
+        public static final String BOTANIA = "botania";
         public static final String BOTANY = "botany";
         public static final String CHISEL = "chisel";
         public static final String CONNECTED_TEXTURES_MOD = "ctm";
@@ -199,6 +202,7 @@ public enum Mods {
         public static final String MODULRAUI = "modularui";
         public static final String MIXINBOOTER = "mixinbooter";
         public static final String MYSTICAL_WORLD = "mysticalworld";
+        public static final String NATURA = "natura";
         public static final String NEEVES_AE2 = "nae2";
         public static final String NOTHIRIUM = "nothirium";
         public static final String NUCLEAR_CRAFT = "nuclearcraft";
