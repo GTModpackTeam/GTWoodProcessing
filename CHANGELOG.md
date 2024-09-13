@@ -1,3 +1,10 @@
+# v1.2.1
+## New Integration
+- Botania
+- Natura
+
+* * *
+
 # v1.2.0
 ## New Integration
 - Ice and Fire: Dragons
