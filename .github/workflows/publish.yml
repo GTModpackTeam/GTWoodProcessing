@@ -107,6 +107,7 @@ jobs:
             nether-update-backport(recommended)
             the-twilight-forest(recommended)
             botania(recommended)
+            natura(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
