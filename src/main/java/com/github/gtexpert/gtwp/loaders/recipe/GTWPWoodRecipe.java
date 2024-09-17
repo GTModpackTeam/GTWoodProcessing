@@ -74,10 +74,15 @@ public class GTWPWoodRecipe {
         int stick_saw = GTWPConfigHolder.ceuOverride.moreNerfStickCrafting ? 2 : 4;
         stick_saw = ConfigHolder.recipes.harderRods ? stick_saw : 6;
 
-        ModHandler.removeRecipeByName(Mods.GregTech.getResource("stick_normal"));
+        if (ConfigHolder.recipes.harderRods) {
+            ModHandler.removeRecipeByName(Mods.GregTech.getResource("stick_normal"));
+            ModHandler.removeRecipeByName(Mods.GregTech.getResource("stick_saw"));
+        } else {
+            ModHandler.removeRecipeByName(Mods.Vanilla.getResource("stick"));
+        }
+
         ModHandler.addMirroredShapedRecipe("stick_normal", new ItemStack(Items.STICK, stick_normal), "P", "P",
                 'P', new UnificationEntry(plank, Materials.Wood));
-        ModHandler.removeRecipeByName(Mods.GregTech.getResource("stick_saw"));
         ModHandler.addMirroredShapedRecipe("stick_saw", new ItemStack(Items.STICK, stick_saw), "s", "P", "P",
                 'P', new UnificationEntry(plank, Materials.Wood));
 
@@ -94,6 +99,9 @@ public class GTWPWoodRecipe {
     private static void planks() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
             GTWPWoodRecipeLoader.removePlankRecipe(true, entry, Mods.Names.GREGTECH);
+            if (!ConfigHolder.recipes.hardWoodRecipes) {
+                GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.VANILLA);
+            }
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);

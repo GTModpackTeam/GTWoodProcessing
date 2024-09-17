@@ -3,6 +3,7 @@ package com.github.gtexpert.gtwp.integration.gtfo.loaders.recipes;
 import java.util.Arrays;
 import java.util.List;
 
+import gregtech.common.ConfigHolder;
 import gregtech.loaders.WoodTypeEntry;
 
 import com.github.gtexpert.gtwp.api.util.Mods;
@@ -63,6 +64,9 @@ public class GTFOWoodRecipe {
     public static void init() {
         for (WoodTypeEntry entry : getDefaultEntries()) {
             GTWPWoodRecipeLoader.removePlankRecipe(true, entry);
+            if (!ConfigHolder.recipes.hardWoodRecipes) {
+                GTWPWoodRecipeLoader.removePlankRecipe(false, entry, Mods.Names.GREGTECH);
+            }
 
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
