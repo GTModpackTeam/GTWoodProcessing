@@ -1,3 +1,8 @@
+# v1.2.2
+- Fixed behavior when hardWoodRecipes or harderRods cfg is false
+
+* * *
+
 # v1.2.1
 ## New Integration
 - Botania
