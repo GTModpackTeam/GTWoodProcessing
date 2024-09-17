@@ -1,7 +1,8 @@
+<p align="center"><img src="https://github.com/GTModpackTeam/GTWoodProcessing/blob/master/src/main/resources/assets/gtwp/logo.png" alt="Logo" width="256" height="256"></p>
 <h1 align="center">GregTech Wood Processing</h1>
 <h1 align="center">
     <a href="https://www.curseforge.com/minecraft/mc-mods/gtwoodprocessing"><img src="https://img.shields.io/badge/Available%20for-MC%201.12.2%20-informational?style=for-the-badge" alt="Supported Versions"></a>
-    <a href="https://github.com/GTModpackTeam/GTWoodProcessing/blob/main/LICENSE"><img src="https://img.shields.io/github/license/GTModpackTeam/GTWoodProcessing?style=for-the-badge" alt="License"></a>
+    <a href="https://github.com/GTModpackTeam/GTWoodProcessing/blob/master/LICENSE"><img src="https://img.shields.io/github/license/GTModpackTeam/GTWoodProcessing?style=for-the-badge" alt="License"></a>
     <a href="https://discord.gg/xBwHpZyZdW"><img src="https://img.shields.io/discord/945647524855812176?color=5464ec&label=Discord&style=for-the-badge" alt="Discord"></a>
     <br>
     <a href="https://www.curseforge.com/minecraft/mc-mods/gtwoodprocessing"><img src="https://cf.way2muchnoise.eu/1093753.svg?badge_style=for_the_badge" alt="CurseForge"></a>
@@ -17,5 +18,5 @@
 
 - I modified some textures & codes from [GregTech CE: Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) under [LGPL-3.0](https://github.com/GregTechCEu/GregTech/blob/master/LICENSE) License
 - Sawmill textures from [Impact-Core](https://github.com/GT-IMPACT/Impact-Core) under [MIT](https://github.com/GT-IMPACT/Impact-Core/blob/master/LICENSE) License
-- Sawmill codes from [GTExpert-Core](https://github.com/GTModpackTeam/GTExpert-Core) under [LGPL-3.0](https://github.com/GTModpackTeam/GTExpert-Core/blob/master/LICENSE) License
-    - Originally GTExpert-Core, but separated.
+- Sawmill codes from [GTWoodProcessing](https://github.com/GTModpackTeam/GTWoodProcessing) under [LGPL-3.0](https://github.com/GTModpackTeam/GTWoodProcessing/blob/master/LICENSE) License
+    - Originally GTWoodProcessing, but separated.
