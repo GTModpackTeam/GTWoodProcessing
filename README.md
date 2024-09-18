@@ -18,5 +18,5 @@
 
 - I modified some textures & codes from [GregTech CE: Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) under [LGPL-3.0](https://github.com/GregTechCEu/GregTech/blob/master/LICENSE) License
 - Sawmill textures from [Impact-Core](https://github.com/GT-IMPACT/Impact-Core) under [MIT](https://github.com/GT-IMPACT/Impact-Core/blob/master/LICENSE) License
-- Sawmill codes from [GTWoodProcessing](https://github.com/GTModpackTeam/GTWoodProcessing) under [LGPL-3.0](https://github.com/GTModpackTeam/GTWoodProcessing/blob/master/LICENSE) License
-    - Originally GTWoodProcessing, but separated.
+- Sawmill codes from [GTExpert-Core](https://github.com/GTModpackTeam/GTExpert-Core) under [LGPL-3.0](https://github.com/GTModpackTeam/GTExpert-Core/blob/master/LICENSE) License
+    - Originally GTExpert-Core, but separated.
