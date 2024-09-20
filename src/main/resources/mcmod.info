@@ -14,6 +14,7 @@
     "credits": "",
     "dependencies": [
         "chickenchunks",
+        "modularui",
         "gregtech"
     ]
 }]
