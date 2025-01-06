@@ -33,30 +33,37 @@ public class GTWPWoodRecipe {
             return DEFAULT_ENTRIES = Arrays.asList(
                     new WoodTypeEntry.Builder(mcModId, "oak")
                             .planks(new ItemStack(Blocks.PLANKS), null)
+                            .slab(new ItemStack(Blocks.WOODEN_SLAB), null)
                             .log(new ItemStack(Blocks.LOG))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "spruce")
                             .planks(new ItemStack(Blocks.PLANKS, 1, 1), null)
+                            .slab(new ItemStack(Blocks.WOODEN_SLAB, 1, 1), null)
                             .log(new ItemStack(Blocks.LOG, 1, 1))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "birch")
                             .planks(new ItemStack(Blocks.PLANKS, 1, 2), null)
+                            .slab(new ItemStack(Blocks.WOODEN_SLAB, 1, 2), null)
                             .log(new ItemStack(Blocks.LOG, 1, 2))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "jungle")
                             .planks(new ItemStack(Blocks.PLANKS, 1, 3), null)
+                            .slab(new ItemStack(Blocks.WOODEN_SLAB, 1, 3), null)
                             .log(new ItemStack(Blocks.LOG, 1, 3))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "acacia")
                             .planks(new ItemStack(Blocks.PLANKS, 1, 4), null)
+                            .slab(new ItemStack(Blocks.WOODEN_SLAB, 1, 4), null)
                             .log(new ItemStack(Blocks.LOG2))
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "dark_oak")
                             .planks(new ItemStack(Blocks.PLANKS, 1, 5), null)
+                            .slab(new ItemStack(Blocks.WOODEN_SLAB, 1, 5), null)
                             .log(new ItemStack(Blocks.LOG2, 1, 1))
                             .build(),
                     new WoodTypeEntry.Builder(GTValues.MODID, "rubber")
                             .planks(MetaBlocks.PLANKS.getItemVariant(BlockGregPlanks.BlockType.RUBBER_PLANK), null)
+                            .slab(new ItemStack(MetaBlocks.WOOD_SLAB), null)
                             .log(new ItemStack(MetaBlocks.RUBBER_LOG))
                             .build());
         }
