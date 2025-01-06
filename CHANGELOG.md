@@ -1,3 +1,9 @@
+# v1.2.3
+## New Integration
+- Fixed vanilla and rubber slab recipe
+
+* * *
+
 # v1.2.2
 - Fixed behavior when hardWoodRecipes or harderRods cfg is false
 
