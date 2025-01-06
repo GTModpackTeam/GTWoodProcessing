@@ -1,5 +1,4 @@
 # v1.2.3
-## New Integration
 - Fixed vanilla and rubber slab recipe
 
 * * *
