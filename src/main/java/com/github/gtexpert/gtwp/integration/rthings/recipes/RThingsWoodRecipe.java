@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.rthings.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class RThingsWoodRecipe {
                     new WoodTypeEntry.Builder(mcModId, "spectre")
                             .log(Mods.RandomThings.getItem("spectrelog", 1)).removeCharcoalRecipe()
                             .planks(Mods.RandomThings.getItem("spectreplank", 1), "spectreplank")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -31,6 +34,7 @@ public class RThingsWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

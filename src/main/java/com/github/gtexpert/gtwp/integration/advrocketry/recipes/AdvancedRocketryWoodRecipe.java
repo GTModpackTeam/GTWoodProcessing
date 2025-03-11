@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.advrocketry.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,6 +22,7 @@ public class AdvancedRocketryWoodRecipe {
                     new WoodTypeEntry.Builder(mcModId, "alien")
                             .log(Mods.AdvancedRocketry.getItem("alienwood", 1)).removeCharcoalRecipe()
                             .planks(Mods.AdvancedRocketry.getItem("planks", 1), "advancedrocketry_alien_plank")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -34,6 +37,7 @@ public class AdvancedRocketryWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

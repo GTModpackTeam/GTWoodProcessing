@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.traverse.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class TraverseWoodRecipe {
                             .planks(Mods.Traverse.getItem("fir_planks", 1), "fir_planks")
                             .slab(Mods.Traverse.getItem("fir_slab", 1), "fir_slab")
                             .stairs(Mods.Traverse.getItem("fir_stairs", 1), "fir_stairs")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -33,6 +36,7 @@ public class TraverseWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

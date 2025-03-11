@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.rustic.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,7 +26,7 @@ public class RusticWoodRecipe {
                             .fenceGate(Mods.Rustic.getItem("fence_gate_olive", 1), "olive_fence_gate")
                             .stairs(Mods.Rustic.getItem("stairs_olive", 1), "olive_stairs")
                             .door(Mods.Rustic.getItem("olive_door", 1), "olive_door")
-                            .registerAllOres()
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "ironwood")
                             .log(Mods.Rustic.getItem("log", 1, 1)).removeCharcoalRecipe()
@@ -34,7 +36,7 @@ public class RusticWoodRecipe {
                             .fenceGate(Mods.Rustic.getItem("fence_gate_ironwood", 1), "ironwood_fence_gate")
                             .stairs(Mods.Rustic.getItem("stairs_ironwood", 1), "ironwood_stairs")
                             .door(Mods.Rustic.getItem("ironwood_door", 1), "ironwood_door")
-                            .registerAllOres()
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -47,6 +49,7 @@ public class RusticWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.pvj.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -180,6 +182,7 @@ public class PVJWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(true, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

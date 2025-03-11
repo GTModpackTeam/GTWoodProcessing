@@ -3,6 +3,7 @@ package com.github.gtexpert.gtwp.integration.botania.recipes;
 import static gregtech.api.GTValues.*;
 import static gregtech.api.GTValues.LV;
 import static gregtech.api.unification.ore.OrePrefix.dust;
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
 
 import java.util.Arrays;
 import java.util.List;
@@ -54,6 +55,7 @@ public class BotaniaWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
 
         // log-associated recipes

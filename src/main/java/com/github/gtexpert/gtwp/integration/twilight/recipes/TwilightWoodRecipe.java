@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.twilight.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,6 +31,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("twilight_oak_fence", 1), "wood/twilight_oak_fence")
                             .fenceGate(Mods.TwilightForest.getItem("twilight_oak_gate", 1), "wood/twilight_oak_gate")
                             .stairs(Mods.TwilightForest.getItem("twilight_oak_stairs", 1), "wood/twilight_oak_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "canopy")
                             .log(Mods.TwilightForest.getItem("twilight_log", 1, 1)).removeCharcoalRecipe()
@@ -37,6 +40,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("canopy_fence", 1), "wood/canopy_fence")
                             .fenceGate(Mods.TwilightForest.getItem("canopy_gate", 1), "wood/canopy_gate")
                             .stairs(Mods.TwilightForest.getItem("canopy_stairs", 1), "wood/canopy_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "mangrove")
                             .log(Mods.TwilightForest.getItem("twilight_log", 1, 2)).removeCharcoalRecipe()
@@ -45,6 +49,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("mangrove_fence", 1), "wood/mangrove_fence")
                             .fenceGate(Mods.TwilightForest.getItem("mangrove_gate", 1), "wood/mangrove_gate")
                             .stairs(Mods.TwilightForest.getItem("mangrove_stairs", 1), "wood/mangrove_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "dark")
                             .log(Mods.TwilightForest.getItem("twilight_log", 1, 3)).removeCharcoalRecipe()
@@ -53,6 +58,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("dark_fence", 1), "wood/darkwood_fence")
                             .fenceGate(Mods.TwilightForest.getItem("dark_gate", 1), "wood/darkwood_gate")
                             .stairs(Mods.TwilightForest.getItem("dark_stairs", 1), "wood/darkwood_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "time")
                             .log(Mods.TwilightForest.getItem("magic_log", 1, 0)).removeCharcoalRecipe()
@@ -61,6 +67,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("time_fence", 1), "wood/time_fence")
                             .fenceGate(Mods.TwilightForest.getItem("time_gate", 1), "wood/time_gate")
                             .stairs(Mods.TwilightForest.getItem("time_stairs", 1), "wood/time_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "trans")
                             .log(Mods.TwilightForest.getItem("magic_log", 1, 1)).removeCharcoalRecipe()
@@ -69,6 +76,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("trans_fence", 1), "wood/trans_fence")
                             .fenceGate(Mods.TwilightForest.getItem("trans_gate", 1), "wood/trans_gate")
                             .stairs(Mods.TwilightForest.getItem("trans_stairs", 1), "wood/trans_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "mine")
                             .log(Mods.TwilightForest.getItem("magic_log", 1, 2)).removeCharcoalRecipe()
@@ -77,6 +85,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("mine_fence", 1), "wood/mine_fence")
                             .fenceGate(Mods.TwilightForest.getItem("mine_gate", 1), "wood/mine_gate")
                             .stairs(Mods.TwilightForest.getItem("mine_stairs", 1), "wood/mine_stairs")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "sort")
                             .log(Mods.TwilightForest.getItem("magic_log", 1, 3)).removeCharcoalRecipe()
@@ -85,6 +94,7 @@ public class TwilightWoodRecipe {
                             .fence(Mods.TwilightForest.getItem("sort_fence", 1), "wood/sort_fence")
                             .fenceGate(Mods.TwilightForest.getItem("sort_gate", 1), "wood/sort_gate")
                             .stairs(Mods.TwilightForest.getItem("sort_stairs", 1), "wood/sort_stairs")
+                            .registerAllUnificationInfo()
                             .build());
 
         }
@@ -98,6 +108,7 @@ public class TwilightWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
 
         // Giant Log

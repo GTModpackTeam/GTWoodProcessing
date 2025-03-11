@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.tc.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,12 +23,14 @@ public class TCWoodRecipe {
                             .planks(Mods.Thaumcraft.getItem("plank_silverwood", 1), "planksilverwood")
                             .slab(Mods.Thaumcraft.getItem("slab_silverwood", 1), "slabsilverwood")
                             .stairs(Mods.Thaumcraft.getItem("stairs_silverwood", 1), "stairssilverwood")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "greatwood")
                             .log(Mods.Thaumcraft.getItem("log_greatwood", 1)).removeCharcoalRecipe()
                             .planks(Mods.Thaumcraft.getItem("plank_greatwood", 1), "plankgreatwood")
                             .slab(Mods.Thaumcraft.getItem("slab_greatwood", 1), "slabgreatwood")
                             .stairs(Mods.Thaumcraft.getItem("stairs_greatwood", 1), "stairsgreatwood")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -39,6 +43,7 @@ public class TCWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

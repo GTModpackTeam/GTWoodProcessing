@@ -2,6 +2,7 @@ package com.github.gtexpert.gtwp.integration.natura.recipes;
 
 import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -196,6 +197,7 @@ public class NaturaWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
         // Redwood Bark
         ItemStack log = Mods.Natura.getItem("redwood_logs", 1, 0);

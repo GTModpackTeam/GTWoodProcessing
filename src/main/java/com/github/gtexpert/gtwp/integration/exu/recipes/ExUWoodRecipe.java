@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.exu.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,11 +21,13 @@ public class ExUWoodRecipe {
                     new WoodTypeEntry.Builder(mcModId, "ironwood_1")
                             .log(Mods.ExtraUtilities.getItem("ironwood_log", 1, 0)).removeCharcoalRecipe()
                             .planks(Mods.ExtraUtilities.getItem("ironwood_planks", 1, 0), "ironwood_log_to_planks_raw")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "ironwood_2")
                             .log(Mods.ExtraUtilities.getItem("ironwood_log", 1, 1)).removeCharcoalRecipe()
                             .planks(Mods.ExtraUtilities.getItem("ironwood_planks", 1, 1),
                                     "ironwood_log_to_planks_burnt")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -36,6 +40,7 @@ public class ExUWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }
