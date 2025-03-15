@@ -29,6 +29,7 @@ import gregtech.loaders.WoodTypeEntry;
 import com.github.gtexpert.gtwp.api.util.Mods;
 import com.github.gtexpert.gtwp.common.GTWPConfigHolder;
 import com.github.gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
+import org.jetbrains.annotations.NotNull;
 
 public class NaturaWoodRecipe {
 
@@ -284,20 +285,7 @@ public class NaturaWoodRecipe {
                 .duration(100).EUt(4)
                 .buildAndRegister();
 
-        Map<String, Integer> woodMetaMap = new HashMap<>();
-        woodMetaMap.put("maple", 0);
-        woodMetaMap.put("silverbell", 1);
-        woodMetaMap.put("amaranth", 2);
-        woodMetaMap.put("tiger", 3);
-        woodMetaMap.put("willow", 4);
-        woodMetaMap.put("eucalyptus", 5);
-        woodMetaMap.put("hopseed", 6);
-        woodMetaMap.put("sakura", 7);
-        woodMetaMap.put("redwood", 8);
-        woodMetaMap.put("ghostwood", 0);
-        woodMetaMap.put("bloodwood", 1);
-        woodMetaMap.put("darkwood", 2);
-        woodMetaMap.put("fusewood", 3);
+        Map<String, Integer> woodMetaMap = getMetaMap();
 
         for (WoodTypeEntry entry : getDefaultEntries()) {
             if (woodMetaMap.containsKey(entry.woodName)) {
@@ -468,5 +456,25 @@ public class NaturaWoodRecipe {
                 }
             }
         }
+    }
+
+    private static @NotNull Map<String, Integer> getMetaMap() {
+        Map<String, Integer> woodMetaMap = new HashMap<>();
+        // Overworld
+        woodMetaMap.put("maple", 0);
+        woodMetaMap.put("silverbell", 1);
+        woodMetaMap.put("amaranth", 2);
+        woodMetaMap.put("tiger", 3);
+        woodMetaMap.put("willow", 4);
+        woodMetaMap.put("eucalyptus", 5);
+        woodMetaMap.put("hopseed", 6);
+        woodMetaMap.put("sakura", 7);
+        woodMetaMap.put("redwood", 8);
+        // Nether
+        woodMetaMap.put("ghostwood", 0);
+        woodMetaMap.put("bloodwood", 1);
+        woodMetaMap.put("darkwood", 2);
+        woodMetaMap.put("fusewood", 3);
+        return woodMetaMap;
     }
 }
