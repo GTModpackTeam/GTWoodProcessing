@@ -402,6 +402,7 @@ public class NaturaWoodRecipe {
                     ItemStack TrapDoor = Mods.Natura.getItem(entry.woodName + "_trap_door");
                     ItemStack Workbench = Mods.Natura.getItem("nether_workbenches", 1, meta);
                     ItemStack Bookshelf = Mods.Natura.getItem("nether_bookshelves", 1, meta);
+                    ItemStack Bowl = Mods.Natura.getItem("empty_bowls", 1, meta);
 
                     // Stick
                     ModHandler.removeRecipeByName(
@@ -484,6 +485,16 @@ public class NaturaWoodRecipe {
                             .buildAndRegister();
                     OreDictUnifier.registerOre(Bookshelf, new ItemMaterialInfo(
                             new MaterialStack(Materials.Paper, M * 9), new MaterialStack(Materials.Wood, M * 6)));
+                    // bowl
+                    if (ConfigHolder.recipes.hardWoodRecipes) {
+                        ModHandler.removeRecipeByName(new ResourceLocation(mcModId,
+                                "nether/bowls/" + entry.woodName + "_bowl"));
+                        ModHandler.addShapedRecipe(mcModId + "/nether/bowls/" + entry.woodName + "_bowl",
+                                GTUtility.copy(3, Bowl), " k ", "PPP",
+                                'P', entry.planks);
+                    }
+                    OreDictUnifier.registerOre(Bowl,
+                            new ItemMaterialInfo(new MaterialStack(Materials.Wood, M / 4)));
                 }
             }
         }
