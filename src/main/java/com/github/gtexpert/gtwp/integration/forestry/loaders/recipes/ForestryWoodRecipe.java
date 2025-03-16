@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.forestry.loaders.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -90,6 +92,7 @@ public class ForestryWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(true, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
 
         for (WoodTypeEntry entry : FIREPROOF_ENTRIES) {
@@ -100,6 +103,7 @@ public class ForestryWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(true, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
 
         // Fireproof for vanilla wood

@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.nub.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,10 +21,12 @@ public class NUBWoodRecipe {
                     new WoodTypeEntry.Builder(mcModId, "crimson")
                             .log(Mods.NetherUpdateBackport.getItem("crimsonstem", 1)).removeCharcoalRecipe()
                             .planks(Mods.NetherUpdateBackport.getItem("crimsonplanks", 1), "crimsonplanksrecipe")
+                            .registerAllUnificationInfo()
                             .build(),
                     new WoodTypeEntry.Builder(mcModId, "warped")
                             .log(Mods.NetherUpdateBackport.getItem("warpedstem", 1)).removeCharcoalRecipe()
                             .planks(Mods.NetherUpdateBackport.getItem("warpedplanks", 1), "warpedplanksrecipe")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -35,6 +39,7 @@ public class NUBWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

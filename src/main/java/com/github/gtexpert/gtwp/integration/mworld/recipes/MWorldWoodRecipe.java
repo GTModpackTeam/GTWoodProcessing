@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.mworld.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +25,7 @@ public class MWorldWoodRecipe {
                             .fence(Mods.MysticalWorld.getItem("charred_fence", 1), "charred_fence")
                             .fenceGate(Mods.MysticalWorld.getItem("charred_fence_gate", 1), "charred_fence_gate")
                             .stairs(Mods.MysticalWorld.getItem("charred_stairs", 1), "charred_stairs")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -35,6 +38,7 @@ public class MWorldWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

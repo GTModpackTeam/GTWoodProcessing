@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.roots.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,6 +27,7 @@ public class RootsWoodRecipe {
                             .fenceGate(Mods.Roots.getItem("wildwood_fence_gate", 1), "wildwood_fence_gate")
                             .stairs(Mods.Roots.getItem("wildwood_stairs", 1), "wildwood_stairs")
                             .registerAllOres()
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -37,6 +40,7 @@ public class RootsWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

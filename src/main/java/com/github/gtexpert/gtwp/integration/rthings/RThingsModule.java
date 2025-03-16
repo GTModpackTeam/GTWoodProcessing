@@ -19,7 +19,7 @@ import com.github.gtexpert.gtwp.module.Modules;
 public class RThingsModule extends GTWPIntegrationSubmodule {
 
     @Override
-    public void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {
+    public void registerRecipesNormal(RegistryEvent.Register<IRecipe> event) {
         RThingsWoodRecipe.init();
     }
 }

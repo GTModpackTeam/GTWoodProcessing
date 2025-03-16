@@ -1,8 +1,8 @@
 package com.github.gtexpert.gtwp.integration.botania.recipes;
 
 import static gregtech.api.GTValues.*;
-import static gregtech.api.GTValues.LV;
 import static gregtech.api.unification.ore.OrePrefix.dust;
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +12,10 @@ import net.minecraft.util.ResourceLocation;
 
 import gregtech.api.recipes.ModHandler;
 import gregtech.api.recipes.RecipeMaps;
+import gregtech.api.unification.OreDictUnifier;
 import gregtech.api.unification.material.Materials;
+import gregtech.api.unification.stack.ItemMaterialInfo;
+import gregtech.api.unification.stack.MaterialStack;
 import gregtech.api.util.GTUtility;
 import gregtech.common.ConfigHolder;
 import gregtech.loaders.WoodTypeEntry;
@@ -54,6 +57,7 @@ public class BotaniaWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
 
         // log-associated recipes
@@ -64,10 +68,11 @@ public class BotaniaWoodRecipe {
             ItemStack slab = Mods.Botania.getItem(name + "0slab");
             // stairs
             ModHandler.removeRecipeByName(new ResourceLocation(mcModId, name + "0stairs"));
-
             ModHandler.addShapedRecipe(mcModId + name + "_stairs", GTUtility.copy(4, stair),
                     "P  ", "PP ", "PPP",
                     'P', wood);
+            OreDictUnifier.registerOre(stair, new ItemMaterialInfo(
+                    new MaterialStack(Materials.Wood, (3 * M) / 2)));
 
             // plank -> stairs assembling
             RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
@@ -80,6 +85,8 @@ public class BotaniaWoodRecipe {
             // plank -> slab crafting
             ModHandler.addShapedRecipe(mcModId + name + "_slab_saw", GTUtility.copy(2, slab),
                     "sS", 'S', wood);
+            OreDictUnifier.registerOre(slab, new ItemMaterialInfo(
+                    new MaterialStack(Materials.Wood, M / 2)));
 
             if (ConfigHolder.recipes.hardWoodRecipes) {
                 ModHandler.removeRecipeByName(new ResourceLocation(mcModId, name + "0slab_0"));

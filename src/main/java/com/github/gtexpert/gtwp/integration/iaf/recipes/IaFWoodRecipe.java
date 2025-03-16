@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.iaf.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class IaFWoodRecipe {
                     new WoodTypeEntry.Builder(mcModId, "dreadwood")
                             .log(Mods.IceAndFire.getItem("dreadwood_log", 1)).removeCharcoalRecipe()
                             .planks(Mods.IceAndFire.getItem("dreadwood_planks", 1), "dread_wood_planks")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -31,6 +34,7 @@ public class IaFWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

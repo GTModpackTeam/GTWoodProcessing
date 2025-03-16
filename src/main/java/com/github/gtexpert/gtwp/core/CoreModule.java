@@ -71,9 +71,7 @@ public class CoreModule implements IModule {
     public void init(FMLInitializationEvent event) {}
 
     @Override
-    public void postInit(FMLPostInitializationEvent event) {
-        RecyclingRecipes.init();
-    }
+    public void postInit(FMLPostInitializationEvent event) {}
 
     @Override
     public void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -102,5 +100,6 @@ public class CoreModule implements IModule {
     public void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {
         GTWPRecipe.init();
         GTWPWoodRecipe.init();
+        RecyclingRecipes.init();
     }
 }

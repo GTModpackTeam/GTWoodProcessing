@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.binnies.extratrees.loaders.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,6 +97,7 @@ public class ExtraTreesWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(true, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
 
         for (WoodTypeEntry entry : getFireproofEntries()) {
@@ -105,6 +108,7 @@ public class ExtraTreesWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(true, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
 
             ModHandler.removeRecipeByName(new ResourceLocation(ModValues.MODID, entry.woodName + "_saw"));
         }

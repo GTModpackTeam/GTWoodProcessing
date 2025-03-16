@@ -1,5 +1,7 @@
 package com.github.gtexpert.gtwp.integration.ids.recipes;
 
+import static gregtech.loaders.recipe.WoodRecipeLoader.registerWoodUnificationInfo;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class IDsWoodRecipe {
                             .planks(Mods.IntegratedDynamics.getItem("menril_planks", 1), null)
                             .stairs(Mods.IntegratedDynamics.getItem("menril_planks_stairs", 1), null)
                             .door(Mods.IntegratedDynamics.getItem("menril_door", 1), "menril_door")
+                            .registerAllUnificationInfo()
                             .build());
         }
         return DEFAULT_ENTRIES;
@@ -34,6 +37,7 @@ public class IDsWoodRecipe {
             GTWPWoodRecipeLoader.registerWoodTypeRecipe(false, entry);
             GTWPWoodRecipeLoader.addCuttingRecipe(entry);
             GTWPWoodRecipeLoader.addSawmillRecipe(entry);
+            registerWoodUnificationInfo(entry);
         }
     }
 }

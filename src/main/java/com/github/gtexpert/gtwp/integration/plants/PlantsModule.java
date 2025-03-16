@@ -19,7 +19,7 @@ import com.github.gtexpert.gtwp.module.Modules;
 public class PlantsModule extends GTWPIntegrationSubmodule {
 
     @Override
-    public void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {
+    public void registerRecipesNormal(RegistryEvent.Register<IRecipe> event) {
         PlantsWoodRecipe.init();
     }
 }
