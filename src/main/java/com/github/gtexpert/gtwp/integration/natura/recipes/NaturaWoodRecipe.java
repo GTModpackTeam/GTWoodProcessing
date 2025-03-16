@@ -14,6 +14,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
+import org.jetbrains.annotations.NotNull;
+
 import gregtech.api.GTValues;
 import gregtech.api.recipes.GTRecipeHandler;
 import gregtech.api.recipes.ModHandler;
@@ -21,6 +23,8 @@ import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.unification.OreDictUnifier;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.unification.ore.OrePrefix;
+import gregtech.api.unification.stack.ItemMaterialInfo;
+import gregtech.api.unification.stack.MaterialStack;
 import gregtech.api.unification.stack.UnificationEntry;
 import gregtech.api.util.GTUtility;
 import gregtech.common.ConfigHolder;
@@ -29,7 +33,6 @@ import gregtech.loaders.WoodTypeEntry;
 import com.github.gtexpert.gtwp.api.util.Mods;
 import com.github.gtexpert.gtwp.common.GTWPConfigHolder;
 import com.github.gtexpert.gtwp.loaders.GTWPWoodRecipeLoader;
-import org.jetbrains.annotations.NotNull;
 
 public class NaturaWoodRecipe {
 
@@ -222,6 +225,9 @@ public class NaturaWoodRecipe {
                     .fluidInputs(Materials.Iron.getFluid(GTValues.L / 9))
                     .outputs(door.copy())
                     .duration(400).EUt(4).buildAndRegister();
+            OreDictUnifier.registerOre(door, new ItemMaterialInfo(
+                    new MaterialStack(Materials.Wood, M * 2),
+                    new MaterialStack(Materials.Iron, M / 9)));
         } else {
             RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
                     .inputs(GTUtility.copy(6, log))
@@ -229,6 +235,8 @@ public class NaturaWoodRecipe {
                     .circuitMeta(6)
                     .duration(600).EUt(4)
                     .buildAndRegister();
+            OreDictUnifier.registerOre(door, new ItemMaterialInfo(
+                    new MaterialStack(Materials.Wood, M * 2)));
         }
         // Redwood Root
         GTWPWoodRecipeLoader.removeCharcoalRecipe(Mods.Natura.getItem("redwood_logs", 1, 2));
@@ -309,6 +317,8 @@ public class NaturaWoodRecipe {
                     ModHandler.addMirroredShapedRecipe(entry.woodName + "_stick_saw", GTUtility.copy(stick_saw, Stick),
                             "Ps", " P",
                             'P', entry.planks);
+                    OreDictUnifier.registerOre(Stick, new ItemMaterialInfo(
+                            new MaterialStack(Materials.Wood, M / 2)));
 
                     // Button and Pressure Plate
                     if (ConfigHolder.recipes.hardRedstoneRecipes) {
@@ -333,7 +343,13 @@ public class NaturaWoodRecipe {
                                 .inputs(GTUtility.copy(2, entry.planks))
                                 .outputs(GTUtility.copy(2, PressurePlate))
                                 .duration(100).EUt(VA[ULV]).buildAndRegister();
+                        OreDictUnifier.registerOre(PressurePlate, new ItemMaterialInfo(
+                                new MaterialStack(Materials.Wood, M), new MaterialStack(Materials.Iron, M / 2)));
+                    } else {
+                        OreDictUnifier.registerOre(PressurePlate,
+                                new ItemMaterialInfo(new MaterialStack(Materials.Wood, M * 2)));
                     }
+                    OreDictUnifier.registerOre(Button, new ItemMaterialInfo(new MaterialStack(Materials.Wood, M / 9)));
 
                     // Trap Door
                     if (ConfigHolder.recipes.hardWoodRecipes) {
@@ -357,6 +373,8 @@ public class NaturaWoodRecipe {
                                 .inputs(new ItemStack(Items.FLINT))
                                 .outputs(Workbench).buildAndRegister();
                     }
+                    OreDictUnifier.registerOre(Workbench,
+                            new ItemMaterialInfo(new MaterialStack(Materials.Wood, M * 2)));
 
                     // Bookshelf
                     if (ConfigHolder.recipes.removeVanillaBlockRecipes) {
@@ -370,6 +388,8 @@ public class NaturaWoodRecipe {
                             .outputs(Bookshelf)
                             .duration(100).EUt(4)
                             .buildAndRegister();
+                    OreDictUnifier.registerOre(Bookshelf, new ItemMaterialInfo(
+                            new MaterialStack(Materials.Paper, M * 9), new MaterialStack(Materials.Wood, M * 6)));
                 } else {
                     // Nether Wood
                     int stickMeta = entry.woodName.equals("ghostwood") ? 9 :
@@ -392,6 +412,7 @@ public class NaturaWoodRecipe {
                     ModHandler.addMirroredShapedRecipe(entry.woodName + "_stick_saw", GTUtility.copy(stick_saw, Stick),
                             "Ps", " P",
                             'P', entry.planks);
+                    OreDictUnifier.registerOre(Stick, new ItemMaterialInfo(new MaterialStack(Materials.Wood, M / 2)));
 
                     // Button and Pressure Plate
                     if (ConfigHolder.recipes.hardRedstoneRecipes) {
@@ -416,7 +437,13 @@ public class NaturaWoodRecipe {
                                 .inputs(GTUtility.copy(2, entry.planks))
                                 .outputs(GTUtility.copy(2, PressurePlate))
                                 .duration(100).EUt(VA[ULV]).buildAndRegister();
+                        OreDictUnifier.registerOre(PressurePlate, new ItemMaterialInfo(
+                                new MaterialStack(Materials.Wood, M), new MaterialStack(Materials.Iron, M / 2)));
+                    } else {
+                        OreDictUnifier.registerOre(PressurePlate,
+                                new ItemMaterialInfo(new MaterialStack(Materials.Wood, M * 2)));
                     }
+                    OreDictUnifier.registerOre(Button, new ItemMaterialInfo(new MaterialStack(Materials.Wood, M / 9)));
 
                     // Trap Door
                     if (ConfigHolder.recipes.hardWoodRecipes) {
@@ -440,6 +467,8 @@ public class NaturaWoodRecipe {
                                 .inputs(new ItemStack(Items.FLINT))
                                 .outputs(Workbench).buildAndRegister();
                     }
+                    OreDictUnifier.registerOre(Workbench,
+                            new ItemMaterialInfo(new MaterialStack(Materials.Wood, M * 2)));
 
                     // Bookshelf
                     if (ConfigHolder.recipes.removeVanillaBlockRecipes) {
@@ -453,6 +482,8 @@ public class NaturaWoodRecipe {
                             .outputs(Bookshelf)
                             .duration(100).EUt(4)
                             .buildAndRegister();
+                    OreDictUnifier.registerOre(Bookshelf, new ItemMaterialInfo(
+                            new MaterialStack(Materials.Paper, M * 9), new MaterialStack(Materials.Wood, M * 6)));
                 }
             }
         }
