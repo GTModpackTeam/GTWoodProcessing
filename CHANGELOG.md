@@ -1,10 +1,15 @@
+# v1.2.4
+- Fix wood recycling recipe [#21](https://github.com/GTModpackTeam/GTWoodProcessing/pull/21)
+
+* * *
+
 # v1.2.3
-- Fixed vanilla and rubber slab recipe
+- Fixed vanilla and rubber slab recipe [#20](https://github.com/GTModpackTeam/GTWoodProcessing/pull/20)
 
 * * *
 
 # v1.2.2
-- Fixed behavior when hardWoodRecipes or harderRods cfg is false
+- Fixed behavior when hardWoodRecipes or harderRods cfg is false [#17](https://github.com/GTModpackTeam/GTWoodProcessing/pull/17)
 
 * * *
 
