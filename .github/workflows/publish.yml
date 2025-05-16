@@ -22,11 +22,11 @@ env:
   # Version of the mod
   FULL_VERSION: "${{ github.event.inputs.version }}-${{ github.event.inputs.release_type }}"
   # type of release
-  NAME: "GTWoodProcessing"
+  NAME: "GTExpertCore"
 
   # Curseforge and Modrinth project IDs
-  CURSEFORGE_PROJECT_ID: "1093753"
-  MODRINTH_PROJECT_ID: "LRBGeIQP"
+  CURSEFORGE_PROJECT_ID: "851103"
+  MODRINTH_PROJECT_ID: "ipueNiWG"
 
 concurrency:
   group: publish-${{ github.head_ref || github.ref }}
@@ -65,9 +65,6 @@ jobs:
       - name: Setup Build
         uses: ./.github/actions/build_setup
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
       - name: Build Project
         run: ./gradlew --info build
 
@@ -82,32 +79,36 @@ jobs:
           modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
           modrinth-token: "${{ secrets.MODRINTH_API_KEY }}"
           modrinth-dependencies: |
+            G1ckZuWK(required)
             tULldUx4(required)
+            tZiutdLG(required)
           curseforge-id: ${{ env.CURSEFORGE_PROJECT_ID }}
           curseforge-token: "${{ secrets.CURSEFORGE_API_KEY }}"
           curseforge-dependencies: |
+            mixin-booter(required)
             gregtech-ce-unofficial(required)
+            gregicality-multiblocks(required)
+            implosionnobomb(recommended)
+            ae2-extended-life(recommended)
+            ae-additions-extra-cells-2-fork(recommended)
+            nae2(recommended)
+            ender-io-base(recommended)
+            ender-io-machines(recommended)
+            ender-io-endergy(recommended)
+            ender-io-conduits(recommended)
+            ender-io-ae2-conduits(recommended)
             gregtech-food-option(recommended)
+            chisel(recommended)
+            extracpus(recommended)
+            draconic-evolution(recommended)
+            draconicadditions(recommended)
+            project-red-illumination(recommended)
+            avaritia-1-1x-unofficial(recommended)
             thaumcraft(recommended)
             forestry(recommended)
+            gendustry(recommended)
             binnies-mods-patched(recommended)
-            advanced-rocketry(recommended)
-            project-vibrant-journeys(recommended)
-            plants(recommended)
-            extra-utilities(recommended)
-            integrated-dynamics(recommended)
-            random-things(recommended)
-            rustic(recommended)
-            mystical-world(recommended)
-            roots(recommended)
-            biomes-o-plenty(recommended)
-            ice-and-fire-dragons(recommended)
-            wizardry-mod(recommended)
-            traverse-reforged(recommended)
-            nether-update-backport(recommended)
-            the-twilight-forest(recommended)
-            botania(recommended)
-            natura(recommended)
+            ulv-covers(incompatible)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
