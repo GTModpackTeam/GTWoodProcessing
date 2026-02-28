@@ -1,5 +1,15 @@
 // Add any additional repositories for your dependencies here
 
 repositories {
-
+    maven {  // Autoconfig and Autosave
+        name 'Mod Maven'
+        url 'https://modmaven.dev'
+    }
+    maven {
+        name 'GTCEu Maven'
+        url 'https://maven.gtceu.com'
+    }
+    flatDir {
+        dirs 'libs'
+    }
 }
