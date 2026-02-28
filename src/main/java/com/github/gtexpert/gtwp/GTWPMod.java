@@ -31,7 +31,7 @@ import com.github.gtexpert.gtwp.module.Modules;
      name = Tags.MODNAME,
      version = Tags.VERSION,
      updateJSON = "https://forge.curseupdate.com/1093753/gtwoodprocessing",
-     acceptedMinecraftVersions = "[1.12.2,1.13)",
+     acceptedMinecraftVersions = "[1.12.2]",
      dependencies = GTInternalTags.DEP_VERSION_STRING + "after:" + Mods.Names.GREGTECH_FOOD_OPTION + ";" +
              "after:" + Mods.Names.THAUMCRAFT + ";" + "after:" + Mods.Names.FORESTRY + ";" +
              "after:" + Mods.Names.EXTRA_TREES + ";" + "after:" + Mods.Names.ADVANCED_ROCKETRY + ";" +
