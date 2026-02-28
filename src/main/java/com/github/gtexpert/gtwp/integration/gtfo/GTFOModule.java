@@ -1,7 +1,12 @@
 package com.github.gtexpert.gtwp.integration.gtfo;
 
+import java.util.Collections;
+import java.util.List;
+
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
+
+import org.jetbrains.annotations.NotNull;
 
 import com.github.gtexpert.gtwp.api.ModValues;
 import com.github.gtexpert.gtwp.api.modules.TModule;
@@ -18,8 +23,14 @@ import com.github.gtexpert.gtwp.module.Modules;
          description = "GregTech Food Option Integration Module")
 public class GTFOModule extends GTWPIntegrationSubmodule {
 
+    @NotNull
     @Override
-    public void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {
+    public List<Class<?>> getEventBusSubscribers() {
+        return Collections.singletonList(GTFOModule.class);
+    }
+
+    @Override
+    public void registerRecipesNormal(RegistryEvent.Register<IRecipe> event) {
         GTFOWoodRecipe.init();
     }
 }

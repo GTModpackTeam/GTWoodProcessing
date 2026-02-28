@@ -1,3 +1,8 @@
+# v1.2.5
+- Fix recycling logc.
+
+* * *
+
 # v1.2.4
 - Fix wood recycling recipe [#21](https://github.com/GTModpackTeam/GTWoodProcessing/pull/21)
 

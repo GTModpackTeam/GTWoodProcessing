@@ -21,7 +21,6 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
 import gregtech.api.block.VariantItemBlock;
-import gregtech.loaders.recipe.RecyclingRecipes;
 
 import com.github.gtexpert.gtwp.Tags;
 import com.github.gtexpert.gtwp.api.ModValues;
@@ -100,6 +99,5 @@ public class CoreModule implements IModule {
     public void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {
         GTWPRecipe.init();
         GTWPWoodRecipe.init();
-        RecyclingRecipes.init();
     }
 }

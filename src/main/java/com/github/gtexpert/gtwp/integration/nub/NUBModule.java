@@ -1,7 +1,12 @@
 package com.github.gtexpert.gtwp.integration.nub;
 
+import java.util.Collections;
+import java.util.List;
+
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
+
+import org.jetbrains.annotations.NotNull;
 
 import com.github.gtexpert.gtwp.api.ModValues;
 import com.github.gtexpert.gtwp.api.modules.TModule;
@@ -17,6 +22,12 @@ import com.github.gtexpert.gtwp.module.Modules;
          name = "GTWoodProcessing Nether Update Backport Integration",
          description = "Nether Update Backport Integration Module")
 public class NUBModule extends GTWPIntegrationSubmodule {
+
+    @NotNull
+    @Override
+    public List<Class<?>> getEventBusSubscribers() {
+        return Collections.singletonList(NUBModule.class);
+    }
 
     @Override
     public void registerRecipesNormal(RegistryEvent.Register<IRecipe> event) {
